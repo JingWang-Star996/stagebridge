@@ -1,0 +1,79 @@
+{
+  "scope": "Two separate 39-frame pilots preceding full runs; memory minima sampled about every ten seconds, not continuous peaks.",
+  "runs": [
+    {
+      "worker_gpu": "3080 Ti Laptop",
+      "prompt_id": "54df73dd-c335-466e-9313-1cf8e82dc506",
+      "width": 608,
+      "height": 352,
+      "frames": 39,
+      "steps": 10,
+      "history_elapsed_s": 84.079,
+      "driver_elapsed_s": 90.508,
+      "min_ram_free_gib": 19.067886352539062,
+      "min_vram_free_gib": 0.2713939342647791,
+      "video_sha256": "b049ce0139585b55ce2d11f0eea48ce5a5055bc0ae11e90cab09ec48c76bbeaf",
+      "video_bytes": 167508,
+      "remote_receipt": [
+        "REMOTE H3 | fingerprint=35a88d51044231fe | encode_ms=45666.46"
+      ],
+      "media": {
+        "sha256": "b049ce0139585b55ce2d11f0eea48ce5a5055bc0ae11e90cab09ec48c76bbeaf",
+        "bytes": 167508,
+        "video_codec": "h264",
+        "width": 608,
+        "height": 352,
+        "frames_decoded": 39,
+        "fps": "24",
+        "first_last_mean_absolute_pixel_diff": 24.038997084330145,
+        "audio_streams": [
+          {
+            "codec": "aac",
+            "sample_rate": 32000,
+            "channels": 2
+          }
+        ],
+        "audio_samples_decoded": 52224,
+        "audio_rms": 0.11369565720635964,
+        "audio_peak": 0.41025930643081665
+      }
+    },
+    {
+      "worker_gpu": "4080 Laptop",
+      "prompt_id": "b26da481-5a27-41c8-8f3d-7b09585d67b4",
+      "width": 608,
+      "height": 352,
+      "frames": 39,
+      "steps": 10,
+      "history_elapsed_s": 104.11,
+      "driver_elapsed_s": 111.404,
+      "min_ram_free_gib": 1.6187515258789062,
+      "min_vram_free_gib": 0.29561559669673443,
+      "video_sha256": "6089b067b6fb569d22e40ac8815b764c92f6db4bc1bffe0103e5dd5f14d42b83",
+      "video_bytes": 167214,
+      "remote_receipt": [
+        "REMOTE H3 | fingerprint=35a88d51044231fe | encode_ms=34833.7"
+      ],
+      "media": {
+        "sha256": "6089b067b6fb569d22e40ac8815b764c92f6db4bc1bffe0103e5dd5f14d42b83",
+        "bytes": 167214,
+        "video_codec": "h264",
+        "width": 608,
+        "height": 352,
+        "frames_decoded": 39,
+        "fps": "24",
+        "first_last_mean_absolute_pixel_diff": 23.82109125797448,
+        "audio_streams": [
+          {
+            "codec": "aac",
+            "sample_rate": 32000,
+            "channels": 2
+          }
+        ],
+        "audio_samples_decoded": 52224,
+        "audio_rms": 0.1326495772304575,
+        "audio_peak": 0.7100154161453247
+      }
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "note": "Hashes of local source receipts; raw local addresses, account names and device IDs were omitted from public summaries.",
+  "sources": [
+    {
+      "source": "evidence/a3-highvram-3080ti/analysis.json",
+      "sha256": "6ecd9dbe862ef5f034cf0d61b5f06679cb602ecde72b51fd92bd4a9145a544c8",
+      "bytes": 2521
+    },
+    {
+      "source": "evidence/a3-highvram-3080ti/summary.json",
+      "sha256": "58914028474aecdfc93986d5007f2d6feeba12041ba41aa0943d46446580a5ee",
+      "bytes": 12607
+    },
+    {
+      "source": "evidence/a3-highvram-5080l/analysis.json",
+      "sha256": "9af356644b18810eed47acc42e6fd9aebf1ed37a485dc9c1c420567816c407ea",
+      "bytes": 2520
+    },
+    {
+      "source": "evidence/a3-highvram-5080l/summary.json",
+      "sha256": "1e5399d42f80a264b23277c8736aadf9d449f00e8cfbc329c55382a26fa3e000",
+      "bytes": 12603
+    },
+    {
+      "source": "evidence/a10-highvram-4080/analysis.json",
+      "sha256": "0e55824eda26a2bed9dd34834cb56af851523cb240ebd1c1a5afe8b46d2525c8",
+      "bytes": 2525
+    },
+    {
+      "source": "evidence/a10-highvram-4080/summary.json",
+      "sha256": "a25f171ed6f10d9643879ab87cf5d991f6bda41b9bda6319d92a0a6bc12e5835",
+      "bytes": 12603
+    },
+    {
+      "source": "evidence/pinhaoka-h3-jing3080ti-minimal-20260928-195800-54df73dd/summary.json",
+      "sha256": "8b0d9a5ef6ca59726beb4e13a22f06f8d4b3a00fa0c994437b96dc50bebc58f4",
+      "bytes": 1449
+    },
+    {
+      "source": "evidence/pinhaoka-h3-jing3080ti-minimal-20260928-195800-54df73dd/media/media-inspection.json",
+      "sha256": "990d0c0bac1dd92865d578242768495d0a38bd7e4f35ba5c99e55ede9b887ad4",
+      "bytes": 589
+    },
+    {
+      "source": "evidence/pinhaoka-h3-jing4080-minimal-20260928-201104-b26da481/summary.json",
+      "sha256": "a7d82eef73b1a697b3484bd51e910b3474054546ae4b9c4d30c76cc55ea9aa8d",
+      "bytes": 1447
+    },
+    {
+      "source": "evidence/pinhaoka-h3-jing4080-minimal-20260928-201104-b26da481/media/media-inspection.json",
+      "sha256": "a20e4e792994db0e65c35247edc385d92200c6c750a2d713ce2ca8a99b0f4b5e",
+      "bytes": 584
+    },
+    {
+      "source": "evidence/a6-reviewed-server/comparison.json",
+      "sha256": "68e953652ba97f60bd6f170fd212ecc0d18d80cd8b4624d43a5698d73381c599",
+      "bytes": 5457
+    },
+    {
+      "source": "evidence/a4-paired-5090/summary.json",
+      "sha256": "207af57f2886f279b48692efda5236c68e8c50178ae5da91ee7e8e41ea7f38c1",
+      "bytes": 1429
+    },
+    {
+      "source": "evidence/a8-real/summary.json",
+      "sha256": "d003986081f116035c39972ca6dfb22dd88e5cf9b23e12f8d6b903a28c68bfba",
+      "bytes": 1814
+    },
+    {
+      "source": "evidence/e2e-5090-fallback/summary.json",
+      "sha256": "2b484b1c153f997504d11cc90216bb67270b4c59f53f17a42f441dbe75c1f564",
+      "bytes": 555
+    },
+    {
+      "source": "evidence/e2e-5090-recovered/summary.json",
+      "sha256": "709b31d3d0e90cf4aaa82d07ccd309f8732242e5701818fd357d3b26ac5e785a",
+      "bytes": 9661
+    },
+    {
+      "source": "evidence/direct-a2-5080l.json",
+      "sha256": "0a7bc5519a2d37c8b110edf59bb1374d5a0d855f1bcd5afac1158cb0f51e05bb",
+      "bytes": 1992
+    },
+    {
+      "source": "evidence/latency-maintenance-off-08.json",
+      "sha256": "2559787e23fac95de513b3ad4902b99f17fe1d77b1cc8857e3852b6178e857e9",
+      "bytes": 10268
+    },
+    {
+      "source": "evidence/a4-image-comparison-20260928.json",
+      "sha256": "7783d712e5718ddc9435d2d20add3a5daafd7daf6308bf3b23930cf6acd00c7f",
+      "bytes": 1032
+    },
+    {
+      "source": "evidence/e2e-edit-comparison.json",
+      "sha256": "a1711fa58866f78fc6b11e6c6070663454ba73049435b3422c1828c946239663",
+      "bytes": 323
+    }
+  ]
+}

@@ -1,0 +1,1342 @@
+{
+  "date": "2026-09-28 local time",
+  "scope": "Historical batches; not a v0.1.0 rerun and not a controlled GPU ranking. 4080 and 5080 shared the 3080 Ti TE concurrently; 3080 Ti worker used 5090 TE. Includes all first-image times.",
+  "common_parameters": {
+    "model": "qwen_image_2.1_int8_convrot.safetensors",
+    "vae": "qwen_image_2.1_vae_bf16.safetensors",
+    "te": "qwen3vl_8b_int8_convrot.safetensors",
+    "resolution": 512,
+    "steps": 8,
+    "cfg": 1.0,
+    "sampler": "euler",
+    "scheduler": "simple",
+    "denoise": 1.0,
+    "seeds": "2000 through 2019 per batch",
+    "fallback_local": false
+  },
+  "batches": [
+    {
+      "worker_gpu": "3080 Ti Laptop",
+      "te_gpu": "5090 Laptop",
+      "historical_batch": "a3-highvram-3080ti",
+      "mode": "Image INT8 full-residency experiment; highvram and dynamic VRAM disabled, not H3 launch flags",
+      "total_success": 20,
+      "first_image_s": 33.56,
+      "all_execution": {
+        "n": 20,
+        "mean_s": 5.44335,
+        "min_s": 3.826,
+        "max_s": 33.56,
+        "std_s": 6.451149667113607,
+        "cv": 1.185143278884071
+      },
+      "after_first_execution": {
+        "n": 19,
+        "mean_s": 3.9635263157894736,
+        "min_s": 3.826,
+        "max_s": 4.247,
+        "std_s": 0.10077299576722068,
+        "cv": 0.025425085577399087
+      },
+      "sampled_worker_gpu_memory_mib": {
+        "first": 0.0,
+        "last": 8346.0,
+        "min": 0.0,
+        "max": 8410.0
+      },
+      "gates": {
+        "twenty_successful_images": "PASS",
+        "unique_prompts_and_seeds": "PASS",
+        "twenty_unique_prompt_ids": "PASS",
+        "history_matches_submitted_workflow": "PASS",
+        "remote_encoding_observed": "PASS",
+        "local_gpu_telemetry": "PASS",
+        "service_memory_telemetry": "PASS"
+      },
+      "jobs": [
+        {
+          "index": 1,
+          "prompt_id": "f32145a0-4278-4bdd-8d88-147630f38d24",
+          "execution_start_ms": 1790532224262,
+          "execution_success_ms": 1790532257822,
+          "execution_s": 33.56,
+          "state": "success",
+          "remote_receipt": [
+            "REMOTE | fingerprint=8bfd0f6e12abf2d2 | encode_ms=284.15"
+          ],
+          "seed": 2000,
+          "prompt": "A red ceramic teapot on a wooden table, soft daylight, studio photograph.\nAcceptance variation ebf5c172880e, frame 01.",
+          "image_sha256": "2b24118e923ee79c18f45b39486bed1127dfc3faf4685396492b6a792f3f1612",
+          "image_size": [
+            512,
+            512
+          ],
+          "source_history_sha256": "28884a81e26cfb3d95250efd42ef54cd55001dbd703a8cfa298e3ae71a555a37",
+          "source_workflow_sha256": "de67a59177489326357320033d6cb5448d1bca810a3193647e61637546c894c7"
+        },
+        {
+          "index": 2,
+          "prompt_id": "2e3711fd-7f26-4f38-9eaf-81417b654391",
+          "execution_start_ms": 1790532259004,
+          "execution_success_ms": 1790532263000,
+          "execution_s": 3.996,
+          "state": "success",
+          "remote_receipt": [
+            "REMOTE | fingerprint=8bfd0f6e12abf2d2 | encode_ms=465.94"
+          ],
+          "seed": 2001,
+          "prompt": "A red ceramic teapot on a wooden table, soft daylight, studio photograph.\nAcceptance variation ebf5c172880e, frame 02.",
+          "image_sha256": "7cd5c715424d48bde2c1637dcb3614c56387ea7176e4e8d23884aceffb3d68eb",
+          "image_size": [
+            512,
+            512
+          ],
+          "source_history_sha256": "5d1cc717eb7944c263927507f3f2d377c4119d2e5b65e1b5f5a23d834698ee4e",
+          "source_workflow_sha256": "6d336cc8fb6e7d141652ccdd1aab95591bf74cc5da46415996dd2e1043f0bb4d"
+        },
+        {
+          "index": 3,
+          "prompt_id": "5a9620dc-5647-4dda-9810-b3abddc53c80",
+          "execution_start_ms": 1790532263548,
+          "execution_success_ms": 1790532267624,
+          "execution_s": 4.076,
+          "state": "success",
+          "remote_receipt": [
+            "REMOTE | fingerprint=8bfd0f6e12abf2d2 | encode_ms=261.31"
+          ],
+          "seed": 2002,
+          "prompt": "A red ceramic teapot on a wooden table, soft daylight, studio photograph.\nAcceptance variation ebf5c172880e, frame 03.",
+          "image_sha256": "fd530c2e431a74d265cf6ca4c4274bab9523b5b33ce61f8a9e83634d85328ec2",
+          "image_size": [
+            512,
+            512
+          ],
+          "source_history_sha256": "ae24b63812f1017ef20cd1d65b4d61ef19cad27daf0eba6e0bef7cf0355d0035",
+          "source_workflow_sha256": "bae526bb3e3c4aaf3521588436e0a97501aaf20aecd72f87f68fc90fe8c41060"
+        },
+        {
+          "index": 4,
+          "prompt_id": "4f1ab6cd-4656-4f97-8e80-44f7f83c5d2a",
+          "execution_start_ms": 1790532268286,
+          "execution_success_ms": 1790532272134,
+          "execution_s": 3.848,
+          "state": "success",
+          "remote_receipt": [
+            "REMOTE | fingerprint=8bfd0f6e12abf2d2 | encode_ms=276.24"
+          ],
+          "seed": 2003,
+          "prompt": "A red ceramic teapot on a wooden table, soft daylight, studio photograph.\nAcceptance variation ebf5c172880e, frame 04.",
+          "image_sha256": "c9c2cf576d555952963b2a184b0f398cb50e0b9e6f5a606f25f24c368e81a70e",
+          "image_size": [
+            512,
+            512
+          ],
+          "source_history_sha256": "b44135985660563be337b73f1e56737510f23c0f9b87c396f2e100efbbf619b4",
+          "source_workflow_sha256": "2d6fcb691c8c854f6c5efe783701b707504863b5703e3a46928cc218a54d1dac"
+        },
+        {
+          "index": 5,
+          "prompt_id": "1eeec475-03d8-4c01-8488-d6d89b6cea8d",
+          "execution_start_ms": 1790532272816,
+          "execution_success_ms": 1790532276784,
+          "execution_s": 3.968,
+          "state": "success",
+          "remote_receipt": [
+            "REMOTE | fingerprint=8bfd0f6e12abf2d2 | encode_ms=269.75"
+          ],
+          "seed": 2004,
+          "prompt": "A red ceramic teapot on a wooden table, soft daylight, studio photograph.\nAcceptance variation ebf5c172880e, frame 05.",
+          "image_sha256": "be018f41f394347f2c2630b64d9e09ceedd101a0f05ddd6d37c559d21a9793dd",
+          "image_size": [
+            512,
+            512
+          ],
+          "source_history_sha256": "56dc282dac4f6937abadf3b0cee96229fc97b88eaeac8f572992edcfe768d859",
+          "source_workflow_sha256": "fbd169d8cd4afe973025de1ecd74e161625d39b156686ad4b4a5e36134f224a8"
+        },
+        {
+          "index": 6,
+          "prompt_id": "b56d75c6-1a91-4a87-b75b-2cd664b8880e",
+          "execution_start_ms": 1790532277289,
+          "execution_success_ms": 1790532281174,
+          "execution_s": 3.885,
+          "state": "success",
+          "remote_receipt": [
+            "REMOTE | fingerprint=8bfd0f6e12abf2d2 | encode_ms=272.73"
+          ],
+          "seed": 2005,
+          "prompt": "A red ceramic teapot on a wooden table, soft daylight, studio photograph.\nAcceptance variation ebf5c172880e, frame 06.",
+          "image_sha256": "37bdff75f4abbd466248ba8aee472b3f30b7208b0e1be345bc47bb012502169d",
+          "image_size": [
+            512,
+            512
+          ],
+          "source_history_sha256": "5a632ef737ad342d2a99acb0c12b97b60c72a7ce070b2edf30b00e46988ee74b",
+          "source_workflow_sha256": "91dd88cb670d740d1f7796b8daf6359f5924f2d2da924a39c2dfa858a8afb4b0"
+        },
+        {
+          "index": 7,
+          "prompt_id": "0d8f699a-bb20-441d-8e68-6d95c4a7e383",
+          "execution_start_ms": 1790532281761,
+          "execution_success_ms": 1790532285734,
+          "execution_s": 3.973,
+          "state": "success",
+          "remote_receipt": [
+            "REMOTE | fingerprint=8bfd0f6e12abf2d2 | encode_ms=279.80"
+          ],
+          "seed": 2006,
+          "prompt": "A red ceramic teapot on a wooden table, soft daylight, studio photograph.\nAcceptance variation ebf5c172880e, frame 07.",
+          "image_sha256": "313cca7d69f678401eeae5d33e137d18589faf08ff273162740f194b20be23cf",
+          "image_size": [
+            512,
+            512
+          ],
+          "source_history_sha256": "473c54327c824b3eca4d51714f937ad8e6fe264dd673c8c7bd7a3809cc2b0386",
+          "source_workflow_sha256": "34d0ca4f8f535d502375fa924f5d514f76cb8528816fec0f65190bb12f635708"
+        },
+        {
+          "index": 8,
+          "prompt_id": "a74fdf4a-deec-4b79-8adb-6cfbd8a228fc",
+          "execution_start_ms": 1790532286328,
+          "execution_success_ms": 1790532290342,
+          "execution_s": 4.014,
+          "state": "success",
+          "remote_receipt": [
+            "REMOTE | fingerprint=8bfd0f6e12abf2d2 | encode_ms=280.64"
+          ],
+          "seed": 2007,
+          "prompt": "A red ceramic teapot on a wooden table, soft daylight, studio photograph.\nAcceptance variation ebf5c172880e, frame 08.",
+          "image_sha256": "4637167f7b4dbb5e1cf76963e3489aaebbdcff1daa38225294ecf3f2ec38918f",
+          "image_size": [
+            512,
+            512
+          ],
+          "source_history_sha256": "8faf618ce255af37152e802849412102507dee53d7043d6699d8f1329dfe13e2",
+          "source_workflow_sha256": "14bf280b920fbb64efbfc66bfa728e798882155a529706ce2be3200a85d56181"
+        },
+        {
+          "index": 9,
+          "prompt_id": "e7a0bda5-89f4-4b84-9b5b-9d6f58675b4e",
+          "execution_start_ms": 1790532290863,
+          "execution_success_ms": 1790532294767,
+          "execution_s": 3.904,
+          "state": "success",
+          "remote_receipt": [
+            "REMOTE | fingerprint=8bfd0f6e12abf2d2 | encode_ms=269.79"
+          ],
+          "seed": 2008,
+          "prompt": "A red ceramic teapot on a wooden table, soft daylight, studio photograph.\nAcceptance variation ebf5c172880e, frame 09.",
+          "image_sha256": "4c061faa04760a1fc569d681c07e37ceeef22456dc36a10295c88f3758c5e85d",
+          "image_size": [
+            512,
+            512
+          ],
+          "source_history_sha256": "47897fe4e1eedb4cf2d42c90dcac2d1491aff617a0bb7f91ea4d47511698f7a7",
+          "source_workflow_sha256": "26ecd81685e5e20d181cd4ddd0a5e1f35d0219c18ce69a6fc74c729d9230c570"
+        },
+        {
+          "index": 10,
+          "prompt_id": "e3fae963-8561-4c45-a340-c43bab6a5a33",
+          "execution_start_ms": 1790532295386,
+          "execution_success_ms": 1790532299212,
+          "execution_s": 3.826,
+          "state": "success",
+          "remote_receipt": [
+            "REMOTE | fingerprint=8bfd0f6e12abf2d2 | encode_ms=274.37"
+          ],
+          "seed": 2009,
+          "prompt": "A red ceramic teapot on a wooden table, soft daylight, studio photograph.\nAcceptance variation ebf5c172880e, frame 10.",
+          "image_sha256": "635fe425032f6ea631e82477925ac3014667abc2edc842dd6fb0e8e1003cea09",
+          "image_size": [
+            512,
+            512
+          ],
+          "source_history_sha256": "5561b936472932bbf1e061a8093d8aa4b7b0edcf9ee11bd49c4f87c93abf3ed7",
+          "source_workflow_sha256": "607efdce65951ef55c0afc38f81ca872791e12dc6f8126e2d27a7c5103200443"
+        },
+        {
+          "index": 11,
+          "prompt_id": "1f2db7cb-95a7-4c75-94e7-9dae2073a7cd",
+          "execution_start_ms": 1790532299917,
+          "execution_success_ms": 1790532303802,
+          "execution_s": 3.885,
+          "state": "success",
+          "remote_receipt": [
+            "REMOTE | fingerprint=8bfd0f6e12abf2d2 | encode_ms=277.98"
+          ],
+          "seed": 2010,
+          "prompt": "A red ceramic teapot on a wooden table, soft daylight, studio photograph.\nAcceptance variation ebf5c172880e, frame 11.",
+          "image_sha256": "714b65912787a0c3483a402aa0cfab81ba56afebceb16b40410a3097b8a61843",
+          "image_size": [
+            512,
+            512
+          ],
+          "source_history_sha256": "d9253dae22a801a71d339f76121c245a39f9642a8878a7bb5921feb6dde73ee5",
+          "source_workflow_sha256": "b3ebf87033077cadf315625517073eb50740d809d2126019d86fed0390bab75a"
+        },
+        {
+          "index": 12,
+          "prompt_id": "4b6f1448-39a7-4c86-8ea4-3587d54f0875",
+          "execution_start_ms": 1790532304519,
+          "execution_success_ms": 1790532308501,
+          "execution_s": 3.982,
+          "state": "success",
+          "remote_receipt": [
+            "REMOTE | fingerprint=8bfd0f6e12abf2d2 | encode_ms=285.48"
+          ],
+          "seed": 2011,
+          "prompt": "A red ceramic teapot on a wooden table, soft daylight, studio photograph.\nAcceptance variation ebf5c172880e, frame 12.",
+          "image_sha256": "ced88e58e51da81b2001a75d98afba89aecd8c6e46dec282ecc21ab69a212e2f",
+          "image_size": [
+            512,
+            512
+          ],
+          "source_history_sha256": "70d984247f14e0123acc6dae8e749e918accd01de727d07b8c3c39d2dcfa4cdd",
+          "source_workflow_sha256": "ddb15f57e9ced7d3361d611094501ab210342e98a96a50d7fc1a471c9de0cb89"
+        },
+        {
+          "index": 13,
+          "prompt_id": "31060ac0-cb60-45e8-a045-d0fe67912a52",
+          "execution_start_ms": 1790532309012,
+          "execution_success_ms": 1790532312970,
+          "execution_s": 3.958,
+          "state": "success",
+          "remote_receipt": [
+            "REMOTE | fingerprint=8bfd0f6e12abf2d2 | encode_ms=271.73"
+          ],
+          "seed": 2012,
+          "prompt": "A red ceramic teapot on a wooden table, soft daylight, studio photograph.\nAcceptance variation ebf5c172880e, frame 13.",
+          "image_sha256": "369a2a4d274dae2d4a7d8aaef1986a3c071f337d87bc41565b28b54b1cebef8d",
+          "image_size": [
+            512,
+            512
+          ],
+          "source_history_sha256": "ddb9009afa9718b7a6246994f8ee6155721ca235edc7ff04cbe3c1e7791a18fc",
+          "source_workflow_sha256": "bb2430c0a454edc2f011e719f16259d129c818eac5f404a69217a193c937ee2d"
+        },
+        {
+          "index": 14,
+          "prompt_id": "79e58471-a866-47d3-b31b-fdb64b3fb910",
+          "execution_start_ms": 1790532313448,
+          "execution_success_ms": 1790532317326,
+          "execution_s": 3.878,
+          "state": "success",
+          "remote_receipt": [
+            "REMOTE | fingerprint=8bfd0f6e12abf2d2 | encode_ms=269.15"
+          ],
+          "seed": 2013,
+          "prompt": "A red ceramic teapot on a wooden table, soft daylight, studio photograph.\nAcceptance variation ebf5c172880e, frame 14.",
+          "image_sha256": "cedf60cb2942dc9643086d0e0894ee22e7806b8243f2d885844d0fbd31d0bdf3",
+          "image_size": [
+            512,
+            512
+          ],
+          "source_history_sha256": "dd284dda0ace627c655b98edaa8ed3f60a80d6782753a2916d8f0782481eb856",
+          "source_workflow_sha256": "11384781cef3ffa704428ce3b97498acafba4f82d0469bc54136ea8b3674e195"
+        },
+        {
+          "index": 15,
+          "prompt_id": "2800183e-1ec9-4779-ba24-f094af9bff12",
+          "execution_start_ms": 1790532318040,
+          "execution_success_ms": 1790532322287,
+          "execution_s": 4.247,
+          "state": "success",
+          "remote_receipt": [
+            "REMOTE | fingerprint=8bfd0f6e12abf2d2 | encode_ms=388.06"
+          ],
+          "seed": 2014,
+          "prompt": "A red ceramic teapot on a wooden table, soft daylight, studio photograph.\nAcceptance variation ebf5c172880e, frame 15.",
+          "image_sha256": "a84c63fd3e193f056a70536909867c1f41da2b7a6a9566bdd74d909ed36cd59e",
+          "image_size": [
+            512,
+            512
+          ],
+          "source_history_sha256": "a81d978385a14f31d3cc07087ec154ab4d838308d9d57eccfd67ec5354996f54",
+          "source_workflow_sha256": "2e79a086972c2d29c97325a5d5978bf3a2c0ddb8268665d2a4179db8b02126c3"
+        },
+        {
+          "index": 16,
+          "prompt_id": "92b2244b-9c1e-49b2-b61a-3c5a5dce900d",
+          "execution_start_ms": 1790532322812,
+          "execution_success_ms": 1790532326719,
+          "execution_s": 3.907,
+          "state": "success",
+          "remote_receipt": [
+            "REMOTE | fingerprint=8bfd0f6e12abf2d2 | encode_ms=271.20"
+          ],
+          "seed": 2015,
+          "prompt": "A red ceramic teapot on a wooden table, soft daylight, studio photograph.\nAcceptance variation ebf5c172880e, frame 16.",
+          "image_sha256": "74c599e0af279fb8ebb1b0ca71dfd43d10528de733251b59931bd1041b4b54f4",
+          "image_size": [
+            512,
+            512
+          ],
+          "source_history_sha256": "50592783bc1c14f44421bc4b3262145524e7de1d87c815968b3903d5a20615a9",
+          "source_workflow_sha256": "6983f45a4db50d93bffff939fbb23bbef77f4912362fcf45088cfba0d5dafd53"
+        },
+        {
+          "index": 17,
+          "prompt_id": "61221066-213e-409c-bb9c-2c6573e066b8",
+          "execution_start_ms": 1790532327311,
+          "execution_success_ms": 1790532331189,
+          "execution_s": 3.878,
+          "state": "success",
+          "remote_receipt": [
+            "REMOTE | fingerprint=8bfd0f6e12abf2d2 | encode_ms=274.76"
+          ],
+          "seed": 2016,
+          "prompt": "A red ceramic teapot on a wooden table, soft daylight, studio photograph.\nAcceptance variation ebf5c172880e, frame 17.",
+          "image_sha256": "3469eea4313b931007191aee62b4233322d007d293bb7d14b8af6dec2653ba8b",
+          "image_size": [
+            512,
+            512
+          ],
+          "source_history_sha256": "4b1f02c55fc456064e7bfb8175d03942d6bc990029b4ec923a83588a782d53c9",
+          "source_workflow_sha256": "13e0c3d8eb7d06bf19c8b6db62bd97b8fb80ace030ce181b2829212ddf6a1b7d"
+        },
+        {
+          "index": 18,
+          "prompt_id": "f036044b-463f-496d-9bbb-33ba1bbacf53",
+          "execution_start_ms": 1790532331832,
+          "execution_success_ms": 1790532335862,
+          "execution_s": 4.03,
+          "state": "success",
+          "remote_receipt": [
+            "REMOTE | fingerprint=8bfd0f6e12abf2d2 | encode_ms=278.20"
+          ],
+          "seed": 2017,
+          "prompt": "A red ceramic teapot on a wooden table, soft daylight, studio photograph.\nAcceptance variation ebf5c172880e, frame 18.",
+          "image_sha256": "2a873255de812619f3831ba2211be932164d4a3aab54cc88a2068e3e3014529b",
+          "image_size": [
+            512,
+            512
+          ],
+          "source_history_sha256": "fab4525dce764f5ab57ed48ac57170fbea3a16825023a4fdfcac4bab1741a90d",
+          "source_workflow_sha256": "426c46ca4608899f2b8d0dbc10a56923f34d155b252e31455d51f0b6ba50e5c5"
+        },
+        {
+          "index": 19,
+          "prompt_id": "fccd61a2-be3f-405f-9ffe-cde151e759e7",
+          "execution_start_ms": 1790532336289,
+          "execution_success_ms": 1790532340221,
+          "execution_s": 3.932,
+          "state": "success",
+          "remote_receipt": [
+            "REMOTE | fingerprint=8bfd0f6e12abf2d2 | encode_ms=271.80"
+          ],
+          "seed": 2018,
+          "prompt": "A red ceramic teapot on a wooden table, soft daylight, studio photograph.\nAcceptance variation ebf5c172880e, frame 19.",
+          "image_sha256": "161f6502d8542997f689ee4aa672c31b744347f2fac305c0ed3f1b69637fa42e",
+          "image_size": [
+            512,
+            512
+          ],
+          "source_history_sha256": "bd265c47c0b3c766a4ebf536aad94c2a1123d1fb2890363631852677115d5385",
+          "source_workflow_sha256": "7ac7d8bf8a6ab585889f806adc0ee15e1ae2aec28edf0084f1ca1121c9838ed1"
+        },
+        {
+          "index": 20,
+          "prompt_id": "8ddfb307-ca7e-4a42-ad02-26e9c90a6182",
+          "execution_start_ms": 1790532340713,
+          "execution_success_ms": 1790532344833,
+          "execution_s": 4.12,
+          "state": "success",
+          "remote_receipt": [
+            "REMOTE | fingerprint=8bfd0f6e12abf2d2 | encode_ms=270.83"
+          ],
+          "seed": 2019,
+          "prompt": "A red ceramic teapot on a wooden table, soft daylight, studio photograph.\nAcceptance variation ebf5c172880e, frame 20.",
+          "image_sha256": "a03affa1bfe9b73ec180a1ce5d75c1a8337fa7c03f767ace4f9360994b2943c6",
+          "image_size": [
+            512,
+            512
+          ],
+          "source_history_sha256": "5face371fb2a344f5ab158c118ef6f5dd20ff319f00673d7047922010da27c10",
+          "source_workflow_sha256": "3aa2dd001e7dd457af62342bd41fa1da3bf0a84460237406dbe307095ba381b9"
+        }
+      ]
+    },
+    {
+      "worker_gpu": "5080 Laptop",
+      "te_gpu": "3080 Ti Laptop",
+      "historical_batch": "a3-highvram-5080l",
+      "mode": "Image INT8 full-residency experiment; highvram and dynamic VRAM disabled, not H3 launch flags",
+      "total_success": 20,
+      "first_image_s": 26.657,
+      "all_execution": {
+        "n": 20,
+        "mean_s": 6.09745,
+        "min_s": 4.614,
+        "max_s": 26.657,
+        "std_s": 4.724986618764121,
+        "cv": 0.7749119088740574
+      },
+      "after_first_execution": {
+        "n": 19,
+        "mean_s": 5.0153684210526315,
+        "min_s": 4.614,
+        "max_s": 5.896,
+        "std_s": 0.28725235751427164,
+        "cv": 0.05727442799785041
+      },
+      "sampled_worker_gpu_memory_mib": {
+        "first": 0.0,
+        "last": 8402.0,
+        "min": 0.0,
+        "max": 8466.0
+      },
+      "gates": {
+        "twenty_successful_images": "PASS",
+        "unique_prompts_and_seeds": "PASS",
+        "twenty_unique_prompt_ids": "PASS",
+        "history_matches_submitted_workflow": "PASS",
+        "remote_encoding_observed": "PASS",
+        "local_gpu_telemetry": "PASS",
+        "service_memory_telemetry": "PASS"
+      },
+      "jobs": [
+        {
+          "index": 1,
+          "prompt_id": "52d7d795-e163-4c27-850e-eff21e47aa88",
+          "execution_start_ms": 1790531374246,
+          "execution_success_ms": 1790531400903,
+          "execution_s": 26.657,
+          "state": "success",
+          "remote_receipt": [
+            "REMOTE | fingerprint=8bfd0f6e12abf2d2 | encode_ms=889.30"
+          ],
+          "seed": 2000,
+          "prompt": "A red ceramic teapot on a wooden table, soft daylight, studio photograph.\nAcceptance variation bb08e90b6589, frame 01.",
+          "image_sha256": "7bf2e7be2a47a963b3e567c83d3d53664ac654c726ff60cafa7e2dbd80492fff",
+          "image_size": [
+            512,
+            512
+          ],
+          "source_history_sha256": "1ebd1a988aba0bc3acc96d7dc15b32bfaf95f70db057d00b19b64856780bb5ce",
+          "source_workflow_sha256": "58502ace34db8e59a03d127c4c1b7d63b4a95f49ebb3911ba7274ef36ef8d575"
+        },
+        {
+          "index": 2,
+          "prompt_id": "36491583-2501-487f-a610-ef1f83ff5620",
+          "execution_start_ms": 1790531401664,
+          "execution_success_ms": 1790531407560,
+          "execution_s": 5.896,
+          "state": "success",
+          "remote_receipt": [
+            "REMOTE | fingerprint=8bfd0f6e12abf2d2 | encode_ms=1770.05"
+          ],
+          "seed": 2001,
+          "prompt": "A red ceramic teapot on a wooden table, soft daylight, studio photograph.\nAcceptance variation bb08e90b6589, frame 02.",
+          "image_sha256": "05ed15686c0cbf9311c2e428f7ec206af3203b235611ab2233d383980a6d0a5e",
+          "image_size": [
+            512,
+            512
+          ],
+          "source_history_sha256": "51e150c2e7787b6c65a4e43ca1d0f0f9ca104cbed7d4004ec1a02ea1c09cd3f5",
+          "source_workflow_sha256": "38cf8b228bb569df45a18da7e1c1c4d5acd20dd9657c4b7ada95776de5a0f57e"
+        },
+        {
+          "index": 3,
+          "prompt_id": "5f3e4f52-959a-45a7-befe-d2dafd910477",
+          "execution_start_ms": 1790531408147,
+          "execution_success_ms": 1790531413181,
+          "execution_s": 5.034,
+          "state": "success",
+          "remote_receipt": [
+            "REMOTE | fingerprint=8bfd0f6e12abf2d2 | encode_ms=883.30"
+          ],
+          "seed": 2002,
+          "prompt": "A red ceramic teapot on a wooden table, soft daylight, studio photograph.\nAcceptance variation bb08e90b6589, frame 03.",
+          "image_sha256": "02b390ca0b8c240c2fc445d1a2f98acc31bc73f27f62ca641521afd0808ed6dd",
+          "image_size": [
+            512,
+            512
+          ],
+          "source_history_sha256": "4672fa9ae55be249b0e5ee95df232d363a12d4b2b41638fc9f3e2f1cf7a502e4",
+          "source_workflow_sha256": "62145aeeeff080247530c12ebb229dcc2a2b74199187f1bcb594f1c6d7d0de24"
+        },
+        {
+          "index": 4,
+          "prompt_id": "2180a59d-1126-4240-ad51-a2665d9de6ea",
+          "execution_start_ms": 1790531414606,
+          "execution_success_ms": 1790531419603,
+          "execution_s": 4.997,
+          "state": "success",
+          "remote_receipt": [
+            "REMOTE | fingerprint=8bfd0f6e12abf2d2 | encode_ms=769.60"
+          ],
+          "seed": 2003,
+          "prompt": "A red ceramic teapot on a wooden table, soft daylight, studio photograph.\nAcceptance variation bb08e90b6589, frame 04.",
+          "image_sha256": "0630d47fd9cf5ae756647f8067f1c0842950442941b25db9d797eb8e01eb160b",
+          "image_size": [
+            512,
+            512
+          ],
+          "source_history_sha256": "d90bd9daa5461b77c214a2b4ae9c6b23c50c488e3ec174502d2e54025f3a423a",
+          "source_workflow_sha256": "ac0c115c73e02c9f72c9356fb05abbe244a449b411124a32d1ce0d17a49647a9"
+        },
+        {
+          "index": 5,
+          "prompt_id": "68dab23d-e79a-4330-9b13-ca7591117e55",
+          "execution_start_ms": 1790531421056,
+          "execution_success_ms": 1790531425866,
+          "execution_s": 4.81,
+          "state": "success",
+          "remote_receipt": [
+            "REMOTE | fingerprint=8bfd0f6e12abf2d2 | encode_ms=855.67"
+          ],
+          "seed": 2004,
+          "prompt": "A red ceramic teapot on a wooden table, soft daylight, studio photograph.\nAcceptance variation bb08e90b6589, frame 05.",
+          "image_sha256": "8d082450b64bc72ff1612fbd2236d73a659e26dd92da2e2aaedfb7f46d8f4fd9",
+          "image_size": [
+            512,
+            512
+          ],
+          "source_history_sha256": "a159619fb08e9d7fec5216647c72eb97b357b8ca72dfc62feaa6776a5c5b29b4",
+          "source_workflow_sha256": "baea646edc6a79a19b936b6913c15d58095a0806b3439a10c60300355b1ca9a7"
+        },
+        {
+          "index": 6,
+          "prompt_id": "ba146ca4-eeed-4b98-9c2c-b098f069cbfb",
+          "execution_start_ms": 1790531427450,
+          "execution_success_ms": 1790531432592,
+          "execution_s": 5.142,
+          "state": "success",
+          "remote_receipt": [
+            "REMOTE | fingerprint=8bfd0f6e12abf2d2 | encode_ms=869.69"
+          ],
+          "seed": 2005,
+          "prompt": "A red ceramic teapot on a wooden table, soft daylight, studio photograph.\nAcceptance variation bb08e90b6589, frame 06.",
+          "image_sha256": "6f522f0e3b9c8a3b4f088d4a814eb7d2cec4890d5e681252efce76787d1130b7",
+          "image_size": [
+            512,
+            512
+          ],
+          "source_history_sha256": "a6508970495690ac4606787ad7debbd5b9fc38d2ce0b88417e1ab227b401d25c",
+          "source_workflow_sha256": "b89f35688b25bb4732dbf5241c29d372dcc9764199e74fd16cbc088e31c9cd4e"
+        },
+        {
+          "index": 7,
+          "prompt_id": "c38e83cf-5f6e-48d6-8f79-2e59bff014fd",
+          "execution_start_ms": 1790531433906,
+          "execution_success_ms": 1790531438839,
+          "execution_s": 4.933,
+          "state": "success",
+          "remote_receipt": [
+            "REMOTE | fingerprint=8bfd0f6e12abf2d2 | encode_ms=855.04"
+          ],
+          "seed": 2006,
+          "prompt": "A red ceramic teapot on a wooden table, soft daylight, studio photograph.\nAcceptance variation bb08e90b6589, frame 07.",
+          "image_sha256": "0cb2df7c8d8c9ba72cd36134c6027e51b935a40c9638dab2bee6d1750874f7b6",
+          "image_size": [
+            512,
+            512
+          ],
+          "source_history_sha256": "255f9b8251f8b82d649fa3144c41087f2e7360f7d90b25a7f7910b4eab1b4ba0",
+          "source_workflow_sha256": "6573dbd6f470a9583d4eb59161ad191e4653ffed93ebe13f5b1bf1eaee08d4c1"
+        },
+        {
+          "index": 8,
+          "prompt_id": "4cc039e3-0904-4bc2-a986-3674f7b7e861",
+          "execution_start_ms": 1790531440305,
+          "execution_success_ms": 1790531445312,
+          "execution_s": 5.007,
+          "state": "success",
+          "remote_receipt": [
+            "REMOTE | fingerprint=8bfd0f6e12abf2d2 | encode_ms=863.04"
+          ],
+          "seed": 2007,
+          "prompt": "A red ceramic teapot on a wooden table, soft daylight, studio photograph.\nAcceptance variation bb08e90b6589, frame 08.",
+          "image_sha256": "f8fc0f6de7966b50f05e6406e146ffe0e44d988e15a4ca289c8ccee112b995c5",
+          "image_size": [
+            512,
+            512
+          ],
+          "source_history_sha256": "ca66ae4f43e5e9ec9cb9f699482c3d697a88b9be56f677c8952c0303a94da7cc",
+          "source_workflow_sha256": "2a155234680dcd0e144a51ede1695f28f7f8d188c76259d05ae8c37465e90650"
+        },
+        {
+          "index": 9,
+          "prompt_id": "e1aabb08-d0c4-4d2f-96a0-c6a707f6a25f",
+          "execution_start_ms": 1790531446707,
+          "execution_success_ms": 1790531451590,
+          "execution_s": 4.883,
+          "state": "success",
+          "remote_receipt": [
+            "REMOTE | fingerprint=8bfd0f6e12abf2d2 | encode_ms=822.54"
+          ],
+          "seed": 2008,
+          "prompt": "A red ceramic teapot on a wooden table, soft daylight, studio photograph.\nAcceptance variation bb08e90b6589, frame 09.",
+          "image_sha256": "cba5afe32a61859505fc03b36e286dd5ae8e7cf4215f0f461958093afebc2d52",
+          "image_size": [
+            512,
+            512
+          ],
+          "source_history_sha256": "5deeffc5a5900dfd0e060d06be3f20c8f03d25737ad3752572382d0d4c38493d",
+          "source_workflow_sha256": "9955589a6c044285bddffb10f378854c1dd433ddb2874665f86d6a9ff7cc54ff"
+        },
+        {
+          "index": 10,
+          "prompt_id": "2112c957-ccf3-455e-b0be-f3499c60e351",
+          "execution_start_ms": 1790531453153,
+          "execution_success_ms": 1790531458443,
+          "execution_s": 5.29,
+          "state": "success",
+          "remote_receipt": [
+            "REMOTE | fingerprint=8bfd0f6e12abf2d2 | encode_ms=979.80"
+          ],
+          "seed": 2009,
+          "prompt": "A red ceramic teapot on a wooden table, soft daylight, studio photograph.\nAcceptance variation bb08e90b6589, frame 10.",
+          "image_sha256": "99cac6b600a363eb41228bfdd75e070f7a57040cc7a4c8fa30f8f8da3480da36",
+          "image_size": [
+            512,
+            512
+          ],
+          "source_history_sha256": "367b44d875eaef585a15ba65c1d6107b56ebc3483b1a344bfb3e9365a8e35378",
+          "source_workflow_sha256": "f807522b576188ed153eb3ab6250689eb6c2e08530488bdce2f3e225deb5f889"
+        },
+        {
+          "index": 11,
+          "prompt_id": "931ded28-40d7-4636-8700-e27a16fc1ad5",
+          "execution_start_ms": 1790531459587,
+          "execution_success_ms": 1790531464676,
+          "execution_s": 5.089,
+          "state": "success",
+          "remote_receipt": [
+            "REMOTE | fingerprint=8bfd0f6e12abf2d2 | encode_ms=936.91"
+          ],
+          "seed": 2010,
+          "prompt": "A red ceramic teapot on a wooden table, soft daylight, studio photograph.\nAcceptance variation bb08e90b6589, frame 11.",
+          "image_sha256": "73b3df9b488554e2b16570fdedb672d822412687f856675026c86879b4559a95",
+          "image_size": [
+            512,
+            512
+          ],
+          "source_history_sha256": "3564499013f3b5fce345017d55920364bc8a836ea05a4fc21c6071aa8a85d80a",
+          "source_workflow_sha256": "a2df9dc34fa61d9ccb63e56f67503d05216a5967519ee2dc3e7e22ec4bcafd7e"
+        },
+        {
+          "index": 12,
+          "prompt_id": "1f08cfec-0bbb-49cb-afde-e42736a36ecb",
+          "execution_start_ms": 1790531466097,
+          "execution_success_ms": 1790531471154,
+          "execution_s": 5.057,
+          "state": "success",
+          "remote_receipt": [
+            "REMOTE | fingerprint=8bfd0f6e12abf2d2 | encode_ms=837.90"
+          ],
+          "seed": 2011,
+          "prompt": "A red ceramic teapot on a wooden table, soft daylight, studio photograph.\nAcceptance variation bb08e90b6589, frame 12.",
+          "image_sha256": "8b001520a2267eb214a997393248d2622932b0d3d52dc76701762f0efff67a80",
+          "image_size": [
+            512,
+            512
+          ],
+          "source_history_sha256": "14cbbab0c18bd04c9d3f53e8516b054281e9eb346b8235b2775e93f601c9bf69",
+          "source_workflow_sha256": "04f21aab30c0df0943d42668f2572522b8d7df6dfe4ba4814e115a0e3511dc21"
+        },
+        {
+          "index": 13,
+          "prompt_id": "f58e8e15-14fc-4f86-9ad7-f81e8a9f22dd",
+          "execution_start_ms": 1790531472516,
+          "execution_success_ms": 1790531477390,
+          "execution_s": 4.874,
+          "state": "success",
+          "remote_receipt": [
+            "REMOTE | fingerprint=8bfd0f6e12abf2d2 | encode_ms=800.68"
+          ],
+          "seed": 2012,
+          "prompt": "A red ceramic teapot on a wooden table, soft daylight, studio photograph.\nAcceptance variation bb08e90b6589, frame 13.",
+          "image_sha256": "4c689a3353bcec841964e544f4ed5929bf46b5c6ed09dd34e3032eed35241fe5",
+          "image_size": [
+            512,
+            512
+          ],
+          "source_history_sha256": "b8938ea177cdbb8ec0a714a747ec0c7b5a058a252f12962e38e9de8abd5efabc",
+          "source_workflow_sha256": "ddb0253c7d4a93f5757c865aff0f7a9a799457932a47f926be58dd4f4ff8f51c"
+        },
+        {
+          "index": 14,
+          "prompt_id": "d9266e28-bc00-4212-be59-b2c96a1d5d72",
+          "execution_start_ms": 1790531478984,
+          "execution_success_ms": 1790531483944,
+          "execution_s": 4.96,
+          "state": "success",
+          "remote_receipt": [
+            "REMOTE | fingerprint=8bfd0f6e12abf2d2 | encode_ms=815.98"
+          ],
+          "seed": 2013,
+          "prompt": "A red ceramic teapot on a wooden table, soft daylight, studio photograph.\nAcceptance variation bb08e90b6589, frame 14.",
+          "image_sha256": "d3697729bbb001c3ba33c1d8935f5163333add50957b05e00cb860de602ef6ef",
+          "image_size": [
+            512,
+            512
+          ],
+          "source_history_sha256": "de5c00fd96d13d461c727a5844de5ee81729885a7fe123311d82dd91d123c283",
+          "source_workflow_sha256": "c4458f309ee01c0fbb471f50214fce523da79b14e9c1dc33b314421f8a31ec7c"
+        },
+        {
+          "index": 15,
+          "prompt_id": "7f39ee1a-23ae-4e4b-bd54-c1d998351152",
+          "execution_start_ms": 1790531485356,
+          "execution_success_ms": 1790531490762,
+          "execution_s": 5.406,
+          "state": "success",
+          "remote_receipt": [
+            "REMOTE | fingerprint=8bfd0f6e12abf2d2 | encode_ms=794.11"
+          ],
+          "seed": 2014,
+          "prompt": "A red ceramic teapot on a wooden table, soft daylight, studio photograph.\nAcceptance variation bb08e90b6589, frame 15.",
+          "image_sha256": "e81e0f9577f2486162c529c2f53a69086d94fa5b51d6c6fc003aad61fea126f1",
+          "image_size": [
+            512,
+            512
+          ],
+          "source_history_sha256": "3874276e10dde21db2a0f328df30e3aad2d5894aae51656462c087de439753f9",
+          "source_workflow_sha256": "4fbe6e31eccf2a374ef985af15ef71f9203db8b3deddb236823d3fc1dcc7331e"
+        },
+        {
+          "index": 16,
+          "prompt_id": "24221ddd-acc9-4c92-820f-17f3d8d37201",
+          "execution_start_ms": 1790531491711,
+          "execution_success_ms": 1790531496325,
+          "execution_s": 4.614,
+          "state": "success",
+          "remote_receipt": [
+            "REMOTE | fingerprint=8bfd0f6e12abf2d2 | encode_ms=817.05"
+          ],
+          "seed": 2015,
+          "prompt": "A red ceramic teapot on a wooden table, soft daylight, studio photograph.\nAcceptance variation bb08e90b6589, frame 16.",
+          "image_sha256": "0b894e241a19cfd8b789bd0775ea570a16eed0e59d82037c1925277610f0a0df",
+          "image_size": [
+            512,
+            512
+          ],
+          "source_history_sha256": "31c79933ead088b6c52454eeb9c50b46124c20f5e4809a782b64e932f37b0368",
+          "source_workflow_sha256": "a677b8e44a87397a7650ed22e67766ba785a0b7417589b7aa0a40f2d639762b8"
+        },
+        {
+          "index": 17,
+          "prompt_id": "ef9c4ff7-8a07-4a8a-8b2f-6a96e7480698",
+          "execution_start_ms": 1790531498199,
+          "execution_success_ms": 1790531503098,
+          "execution_s": 4.899,
+          "state": "success",
+          "remote_receipt": [
+            "REMOTE | fingerprint=8bfd0f6e12abf2d2 | encode_ms=813.21"
+          ],
+          "seed": 2016,
+          "prompt": "A red ceramic teapot on a wooden table, soft daylight, studio photograph.\nAcceptance variation bb08e90b6589, frame 17.",
+          "image_sha256": "fee03af9cdf6889e90ac4d212689e8020d98b9fae430216ec0850751e1bbde6d",
+          "image_size": [
+            512,
+            512
+          ],
+          "source_history_sha256": "9233a30fd52a44e01fe9e04c9a792e9f1079fc24814539ce36fbee9fae2ed306",
+          "source_workflow_sha256": "d61f27ea147e72bc44051240dd6858f6d0d43147908d6725c866465ce15c3057"
+        },
+        {
+          "index": 18,
+          "prompt_id": "accf75b6-d419-4ee7-a741-63073b292927",
+          "execution_start_ms": 1790531504568,
+          "execution_success_ms": 1790531509188,
+          "execution_s": 4.62,
+          "state": "success",
+          "remote_receipt": [
+            "REMOTE | fingerprint=8bfd0f6e12abf2d2 | encode_ms=792.01"
+          ],
+          "seed": 2017,
+          "prompt": "A red ceramic teapot on a wooden table, soft daylight, studio photograph.\nAcceptance variation bb08e90b6589, frame 18.",
+          "image_sha256": "1d3a6424b2931c267e51a6589de1e1ac92be54cb3624860390e7b9415b703903",
+          "image_size": [
+            512,
+            512
+          ],
+          "source_history_sha256": "e88c4b6d08f042d42aaa0d0f775ab8d499316dff01e8e799a80c4f87b130c3b8",
+          "source_workflow_sha256": "784567bf7a17f2fcd6c10930737273955d68e6ad689fa131613018b5fedc8978"
+        },
+        {
+          "index": 19,
+          "prompt_id": "dc74376e-c04c-409c-84f8-9fbc2330e6a7",
+          "execution_start_ms": 1790531510928,
+          "execution_success_ms": 1790531515608,
+          "execution_s": 4.68,
+          "state": "success",
+          "remote_receipt": [
+            "REMOTE | fingerprint=8bfd0f6e12abf2d2 | encode_ms=786.39"
+          ],
+          "seed": 2018,
+          "prompt": "A red ceramic teapot on a wooden table, soft daylight, studio photograph.\nAcceptance variation bb08e90b6589, frame 19.",
+          "image_sha256": "0b582a0900fba12947a898cf223db0eafb265b4ebf232eb70d291691b0a7b387",
+          "image_size": [
+            512,
+            512
+          ],
+          "source_history_sha256": "2d78c9307c712b1e8fed8e339470ee69ce4b8b0ffb96877913629f3effdcacd8",
+          "source_workflow_sha256": "2b2b93dfdf56550fc02237e447a451dfa085430303ad8303af01c709f85917c1"
+        },
+        {
+          "index": 20,
+          "prompt_id": "b047affd-9bf7-4acc-92e7-2a9a13f4852b",
+          "execution_start_ms": 1790531517372,
+          "execution_success_ms": 1790531522473,
+          "execution_s": 5.101,
+          "state": "success",
+          "remote_receipt": [
+            "REMOTE | fingerprint=8bfd0f6e12abf2d2 | encode_ms=802.79"
+          ],
+          "seed": 2019,
+          "prompt": "A red ceramic teapot on a wooden table, soft daylight, studio photograph.\nAcceptance variation bb08e90b6589, frame 20.",
+          "image_sha256": "367cbf864b159a8df6572227afe041e2552e8348d30ce7db00eda5fcc4790ef2",
+          "image_size": [
+            512,
+            512
+          ],
+          "source_history_sha256": "ea5090c1f94eaa56ffaa8e49e57cd6754c837c7e4fdc0e01c0fd9c8c62d8f527",
+          "source_workflow_sha256": "c32d2cef1aa1032ab46cc0ac1e80d8e743bba6cc28d3f6339ddb197699e33933"
+        }
+      ]
+    },
+    {
+      "worker_gpu": "4080 Laptop",
+      "te_gpu": "3080 Ti Laptop",
+      "historical_batch": "a10-highvram-4080",
+      "mode": "Image INT8 full-residency experiment; highvram and dynamic VRAM disabled, not H3 launch flags",
+      "total_success": 20,
+      "first_image_s": 59.639,
+      "all_execution": {
+        "n": 20,
+        "mean_s": 8.99715,
+        "min_s": 5.909,
+        "max_s": 59.639,
+        "std_s": 11.620306098700672,
+        "cv": 1.2915541142140203
+      },
+      "after_first_execution": {
+        "n": 19,
+        "mean_s": 6.331789473684211,
+        "min_s": 5.909,
+        "max_s": 6.834,
+        "std_s": 0.23558629639070988,
+        "cv": 0.037206906099743045
+      },
+      "sampled_worker_gpu_memory_mib": {
+        "first": 0.0,
+        "last": 7810.0,
+        "min": 0.0,
+        "max": 8386.0
+      },
+      "gates": {
+        "twenty_successful_images": "PASS",
+        "unique_prompts_and_seeds": "PASS",
+        "twenty_unique_prompt_ids": "PASS",
+        "history_matches_submitted_workflow": "PASS",
+        "remote_encoding_observed": "PASS",
+        "local_gpu_telemetry": "PASS",
+        "service_memory_telemetry": "PASS"
+      },
+      "jobs": [
+        {
+          "index": 1,
+          "prompt_id": "73a65cd8-7efa-4c86-b650-60a57707fdf5",
+          "execution_start_ms": 1790531408376,
+          "execution_success_ms": 1790531468015,
+          "execution_s": 59.639,
+          "state": "success",
+          "remote_receipt": [
+            "REMOTE | fingerprint=8bfd0f6e12abf2d2 | encode_ms=821.09"
+          ],
+          "seed": 2000,
+          "prompt": "A red ceramic teapot on a wooden table, soft daylight, studio photograph.\nAcceptance variation 0aa08764fa0d, frame 01.",
+          "image_sha256": "d6c1af0ed4c10c23a61cfb5115c9a68b9dd72d0b7d13853322cef7e1118a8416",
+          "image_size": [
+            512,
+            512
+          ],
+          "source_history_sha256": "83ad2478a7d982ade8f6c1909ef2615be320479a99d5507a740ae5217897f382",
+          "source_workflow_sha256": "539517edc5d6c8202244428e0a7edf3b1cb2704ff1480f3486d9253821d0c090"
+        },
+        {
+          "index": 2,
+          "prompt_id": "96ada7a1-8bc4-4163-9f0d-2357d3b1fc60",
+          "execution_start_ms": 1790531470240,
+          "execution_success_ms": 1790531476165,
+          "execution_s": 5.925,
+          "state": "success",
+          "remote_receipt": [
+            "REMOTE | fingerprint=8bfd0f6e12abf2d2 | encode_ms=807.72"
+          ],
+          "seed": 2001,
+          "prompt": "A red ceramic teapot on a wooden table, soft daylight, studio photograph.\nAcceptance variation 0aa08764fa0d, frame 02.",
+          "image_sha256": "48f27eb45ec6d48eb8f5d6c2c3bb4bc8757e49f5f68cc42b8f51843570e831a5",
+          "image_size": [
+            512,
+            512
+          ],
+          "source_history_sha256": "8e44275cb140d4dd9330fe2f8e9708332aba26b2e71cc961035017bb0f2e1a8f",
+          "source_workflow_sha256": "2828f4c7b9ea8f77cfd89e9ac473ebc4db8b5c692efff7ee283621bcac34c95a"
+        },
+        {
+          "index": 3,
+          "prompt_id": "57680726-99af-442c-ba6e-f1bc59bf9933",
+          "execution_start_ms": 1790531477294,
+          "execution_success_ms": 1790531483576,
+          "execution_s": 6.282,
+          "state": "success",
+          "remote_receipt": [
+            "REMOTE | fingerprint=8bfd0f6e12abf2d2 | encode_ms=789.56"
+          ],
+          "seed": 2002,
+          "prompt": "A red ceramic teapot on a wooden table, soft daylight, studio photograph.\nAcceptance variation 0aa08764fa0d, frame 03.",
+          "image_sha256": "8974f39400461f75cce1a28860c189895828250e2e5bcc0ba26c7c15d4924285",
+          "image_size": [
+            512,
+            512
+          ],
+          "source_history_sha256": "8832f576700b1080f57322a3e0db952ead99859259837e4f123a93d7675bd0e5",
+          "source_workflow_sha256": "e962b3706e3a3a3be6b74cf0b817ba6cb9589310f951a3c900e6b4dac8e9ff4c"
+        },
+        {
+          "index": 4,
+          "prompt_id": "029f724f-4eb3-4bf9-8c0b-f76e44dee0f4",
+          "execution_start_ms": 1790531484118,
+          "execution_success_ms": 1790531490952,
+          "execution_s": 6.834,
+          "state": "success",
+          "remote_receipt": [
+            "REMOTE | fingerprint=8bfd0f6e12abf2d2 | encode_ms=969.07"
+          ],
+          "seed": 2003,
+          "prompt": "A red ceramic teapot on a wooden table, soft daylight, studio photograph.\nAcceptance variation 0aa08764fa0d, frame 04.",
+          "image_sha256": "fe3f9a77939399b8f5964a32b47c31cbd562d36b510f8aced0b1b62505d3cc51",
+          "image_size": [
+            512,
+            512
+          ],
+          "source_history_sha256": "ae57c242730454fd905faa51423517e13c091c957a9168e1e09746ceb0aa716a",
+          "source_workflow_sha256": "0930fed4465ce4b1212063c2ec04c09307d63b7c6f18ec0ca7940cb92af93f4d"
+        },
+        {
+          "index": 5,
+          "prompt_id": "835c0517-f0af-4002-8f4a-132447deac39",
+          "execution_start_ms": 1790531493173,
+          "execution_success_ms": 1790531499401,
+          "execution_s": 6.228,
+          "state": "success",
+          "remote_receipt": [
+            "REMOTE | fingerprint=8bfd0f6e12abf2d2 | encode_ms=792.50"
+          ],
+          "seed": 2004,
+          "prompt": "A red ceramic teapot on a wooden table, soft daylight, studio photograph.\nAcceptance variation 0aa08764fa0d, frame 05.",
+          "image_sha256": "351e5e1be298f3eb86756277cbef6fef4f9c2a267b02f9c6069bd01164a24e6a",
+          "image_size": [
+            512,
+            512
+          ],
+          "source_history_sha256": "d80d97a1d67edd600239792afc12c97fe27e7513e2c88a138732240eab72988a",
+          "source_workflow_sha256": "8fb97a9ab916eb54a14044b58c7d258f7b6cd7d680241dd06f1560a4cc90ed7f"
+        },
+        {
+          "index": 6,
+          "prompt_id": "fe78e91d-5ef4-48d7-bb52-7416cb759dcb",
+          "execution_start_ms": 1790531500118,
+          "execution_success_ms": 1790531506745,
+          "execution_s": 6.627,
+          "state": "success",
+          "remote_receipt": [
+            "REMOTE | fingerprint=8bfd0f6e12abf2d2 | encode_ms=801.13"
+          ],
+          "seed": 2005,
+          "prompt": "A red ceramic teapot on a wooden table, soft daylight, studio photograph.\nAcceptance variation 0aa08764fa0d, frame 06.",
+          "image_sha256": "f830d8eed621dbd131c057c6d1b8938ee0beb83d3b49740f33b5bc325d33ee04",
+          "image_size": [
+            512,
+            512
+          ],
+          "source_history_sha256": "49a7b026a6e872f2d55ea5a8df3c3cda567dbd9fac7891b4adaf471acb0c84b8",
+          "source_workflow_sha256": "09f6854484a96516e0727d3385acef7a031a1a17740eca27b81efe4b15f6ec53"
+        },
+        {
+          "index": 7,
+          "prompt_id": "2440ec95-6a5c-4363-a03f-ebf01e79cc9c",
+          "execution_start_ms": 1790531508889,
+          "execution_success_ms": 1790531515053,
+          "execution_s": 6.164,
+          "state": "success",
+          "remote_receipt": [
+            "REMOTE | fingerprint=8bfd0f6e12abf2d2 | encode_ms=789.66"
+          ],
+          "seed": 2006,
+          "prompt": "A red ceramic teapot on a wooden table, soft daylight, studio photograph.\nAcceptance variation 0aa08764fa0d, frame 07.",
+          "image_sha256": "142bc0cf74b4d746306cb003f6438506a3e9b9b491547375307aafc87ab7bda3",
+          "image_size": [
+            512,
+            512
+          ],
+          "source_history_sha256": "b0b36f065b455a75635d080dae7e0b2a088a91e85de0d67e2b6f03f4b6acba52",
+          "source_workflow_sha256": "918821789d9bfe102f830cad753dc531f9f3b8f87f474e425c83987d0d6433ce"
+        },
+        {
+          "index": 8,
+          "prompt_id": "3cc74f1a-712c-4052-9f40-26c56691770e",
+          "execution_start_ms": 1790531515655,
+          "execution_success_ms": 1790531521943,
+          "execution_s": 6.288,
+          "state": "success",
+          "remote_receipt": [
+            "REMOTE | fingerprint=8bfd0f6e12abf2d2 | encode_ms=827.61"
+          ],
+          "seed": 2007,
+          "prompt": "A red ceramic teapot on a wooden table, soft daylight, studio photograph.\nAcceptance variation 0aa08764fa0d, frame 08.",
+          "image_sha256": "eafcfc251a2fc7913c7a050137b8a78b0b616b8f354bac7a66b0aae620007f16",
+          "image_size": [
+            512,
+            512
+          ],
+          "source_history_sha256": "5d4160a5c38581565410ae8d571bc40aa09be907803807b70aa55c1796aa5329",
+          "source_workflow_sha256": "d5d408ac5940fd950ceb4a621708950dc727cf8364c8774d1dda0f8ee73c7b8c"
+        },
+        {
+          "index": 9,
+          "prompt_id": "dfed37f9-55ae-4710-8382-d22d7cf398f4",
+          "execution_start_ms": 1790531522466,
+          "execution_success_ms": 1790531528924,
+          "execution_s": 6.458,
+          "state": "success",
+          "remote_receipt": [
+            "REMOTE | fingerprint=8bfd0f6e12abf2d2 | encode_ms=1013.23"
+          ],
+          "seed": 2008,
+          "prompt": "A red ceramic teapot on a wooden table, soft daylight, studio photograph.\nAcceptance variation 0aa08764fa0d, frame 09.",
+          "image_sha256": "53f56796bb58b846045f57ff52d249531ded4820657fc4f5a6e39822c7c7f7c2",
+          "image_size": [
+            512,
+            512
+          ],
+          "source_history_sha256": "8b24045436c407a6e0fbc31033c26fcb1e2eb718b926c0951d10eac2b2df273e",
+          "source_workflow_sha256": "3751b05bea1c17fcf741cb3e94f5f6071ab53e4ef2550bede5d0570c8c33662b"
+        },
+        {
+          "index": 10,
+          "prompt_id": "e52afd01-bead-4cb9-b5ab-1fbbefd6605b",
+          "execution_start_ms": 1790531529585,
+          "execution_success_ms": 1790531535841,
+          "execution_s": 6.256,
+          "state": "success",
+          "remote_receipt": [
+            "REMOTE | fingerprint=8bfd0f6e12abf2d2 | encode_ms=908.93"
+          ],
+          "seed": 2009,
+          "prompt": "A red ceramic teapot on a wooden table, soft daylight, studio photograph.\nAcceptance variation 0aa08764fa0d, frame 10.",
+          "image_sha256": "17cb5330f552985afc5d0bce2bbbb85cc4fa91a92a2eee2f40457f6f5ee99657",
+          "image_size": [
+            512,
+            512
+          ],
+          "source_history_sha256": "b4c6776eaa254cce0f8a58b17d705c589c04ae38af015d88f3cfc987826cc69e",
+          "source_workflow_sha256": "80117e61e97ff9653b7d254f864a23c40b4b3b9719ef47de1766a282d0f34123"
+        },
+        {
+          "index": 11,
+          "prompt_id": "81fbf27d-e693-436b-bf01-6f1ccc3947dd",
+          "execution_start_ms": 1790531536405,
+          "execution_success_ms": 1790531542583,
+          "execution_s": 6.178,
+          "state": "success",
+          "remote_receipt": [
+            "REMOTE | fingerprint=8bfd0f6e12abf2d2 | encode_ms=862.25"
+          ],
+          "seed": 2010,
+          "prompt": "A red ceramic teapot on a wooden table, soft daylight, studio photograph.\nAcceptance variation 0aa08764fa0d, frame 11.",
+          "image_sha256": "04214fd411841d8903d9fd2187e0665b9b7d367fa03a96398bdd77a66995ddaf",
+          "image_size": [
+            512,
+            512
+          ],
+          "source_history_sha256": "a4df0b63633b56a3db0b238287baba4b859ffc9f949dc7dd45637d91c2de0aa1",
+          "source_workflow_sha256": "e1fb17f5b1d3599dc9e7587e2cdb524cf06d32cee2c7e89dc40ee81ea05cb5f2"
+        },
+        {
+          "index": 12,
+          "prompt_id": "695e7b6e-53be-4e39-80cf-80f23572f9c4",
+          "execution_start_ms": 1790531543199,
+          "execution_success_ms": 1790531549108,
+          "execution_s": 5.909,
+          "state": "success",
+          "remote_receipt": [
+            "REMOTE | fingerprint=8bfd0f6e12abf2d2 | encode_ms=870.60"
+          ],
+          "seed": 2011,
+          "prompt": "A red ceramic teapot on a wooden table, soft daylight, studio photograph.\nAcceptance variation 0aa08764fa0d, frame 12.",
+          "image_sha256": "562fa215ab05f790cdb2e5558c5144be27b56876ca352a9f09f9540eccbc7050",
+          "image_size": [
+            512,
+            512
+          ],
+          "source_history_sha256": "e39620bc092f43800eded4f3ddaed55e6940c4a3126263b48fa463a80b9ed654",
+          "source_workflow_sha256": "2f3f5d4ab4fa5510fe9487dd4fe917dd53bb029f300f0a8980f5d2f620f00bea"
+        },
+        {
+          "index": 13,
+          "prompt_id": "1247f48c-1856-4319-a715-1107ee3d8052",
+          "execution_start_ms": 1790531550087,
+          "execution_success_ms": 1790531556751,
+          "execution_s": 6.664,
+          "state": "success",
+          "remote_receipt": [
+            "REMOTE | fingerprint=8bfd0f6e12abf2d2 | encode_ms=959.59"
+          ],
+          "seed": 2012,
+          "prompt": "A red ceramic teapot on a wooden table, soft daylight, studio photograph.\nAcceptance variation 0aa08764fa0d, frame 13.",
+          "image_sha256": "cf9cea8d2c317e222c79d5288cf5d38be3575cba6e1c0cabcd24fd329cd581ac",
+          "image_size": [
+            512,
+            512
+          ],
+          "source_history_sha256": "b02888f109352809303ecad16d02121474f31b524f246022c56bf81e72d369cf",
+          "source_workflow_sha256": "aca302cb961242675123d8581b3823f3f6f997723f9842211b3157dc6fc71363"
+        },
+        {
+          "index": 14,
+          "prompt_id": "1248ed11-0911-4b86-b51e-1bbd0f383431",
+          "execution_start_ms": 1790531559057,
+          "execution_success_ms": 1790531565720,
+          "execution_s": 6.663,
+          "state": "success",
+          "remote_receipt": [
+            "REMOTE | fingerprint=8bfd0f6e12abf2d2 | encode_ms=800.58"
+          ],
+          "seed": 2013,
+          "prompt": "A red ceramic teapot on a wooden table, soft daylight, studio photograph.\nAcceptance variation 0aa08764fa0d, frame 14.",
+          "image_sha256": "80ed97ef1b5549629ec5777d7d41ee44a9673c69d6ce8761fb90f428eb550703",
+          "image_size": [
+            512,
+            512
+          ],
+          "source_history_sha256": "a692cd5d4a1824d03fd15c65659138f0e1902d7a9930109cbc405eeebe460f97",
+          "source_workflow_sha256": "be2a2816e89dbb21e1f39f65b8d2b0491902d7af9d254944b5bf32aaf88abba2"
+        },
+        {
+          "index": 15,
+          "prompt_id": "e978cd53-fd29-4bd4-87c2-d2040cdf0363",
+          "execution_start_ms": 1790531568076,
+          "execution_success_ms": 1790531574471,
+          "execution_s": 6.395,
+          "state": "success",
+          "remote_receipt": [
+            "REMOTE | fingerprint=8bfd0f6e12abf2d2 | encode_ms=838.65"
+          ],
+          "seed": 2014,
+          "prompt": "A red ceramic teapot on a wooden table, soft daylight, studio photograph.\nAcceptance variation 0aa08764fa0d, frame 15.",
+          "image_sha256": "dd36679e1d2ea96f69e22f1d81dd896ac889a1a03c6e185be6ce36b2a16288da",
+          "image_size": [
+            512,
+            512
+          ],
+          "source_history_sha256": "5bc1efe2efd3e028c2dd0b12f3149edd83cb86dcbab01b8ac9c61a34a156ca5e",
+          "source_workflow_sha256": "f9dc4b6c7170e7d19d55a79eb0a2af033eaf231408e9a968fde672109299f397"
+        },
+        {
+          "index": 16,
+          "prompt_id": "24d2f15d-8dee-4b6d-a0f6-af431ff0bf8c",
+          "execution_start_ms": 1790531574715,
+          "execution_success_ms": 1790531581105,
+          "execution_s": 6.39,
+          "state": "success",
+          "remote_receipt": [
+            "REMOTE | fingerprint=8bfd0f6e12abf2d2 | encode_ms=980.04"
+          ],
+          "seed": 2015,
+          "prompt": "A red ceramic teapot on a wooden table, soft daylight, studio photograph.\nAcceptance variation 0aa08764fa0d, frame 16.",
+          "image_sha256": "7e6e1ddd04289df6a1759ddf8cfb617535cdf29805b0eedf4c6a7e81fc24c285",
+          "image_size": [
+            512,
+            512
+          ],
+          "source_history_sha256": "89502c6d956255f264cc7e6294c7c77d2d666912400a965a49f678fe44a7c61a",
+          "source_workflow_sha256": "4d9a2c07105b3f3f32981f4577c11573a152d7269ce3e12ee7f385c1c4a84642"
+        },
+        {
+          "index": 17,
+          "prompt_id": "a9df1922-ff6e-4474-a43d-a5088445b4e8",
+          "execution_start_ms": 1790531581751,
+          "execution_success_ms": 1790531587865,
+          "execution_s": 6.114,
+          "state": "success",
+          "remote_receipt": [
+            "REMOTE | fingerprint=8bfd0f6e12abf2d2 | encode_ms=847.82"
+          ],
+          "seed": 2016,
+          "prompt": "A red ceramic teapot on a wooden table, soft daylight, studio photograph.\nAcceptance variation 0aa08764fa0d, frame 17.",
+          "image_sha256": "c5fba3f142919e3523b5e73d5e3279a536f013fbb7b28991fcc94ebbe405686d",
+          "image_size": [
+            512,
+            512
+          ],
+          "source_history_sha256": "41da362c8b365752c67fbb3388dc948178f3308781ce6b5841b559a2517896e1",
+          "source_workflow_sha256": "bf989cfb5032a7fb93d74b6765f851df2c774c4dbb987faff3ffc055888f6896"
+        },
+        {
+          "index": 18,
+          "prompt_id": "974fad2e-b8d8-4768-bcd7-331e0cea1c6a",
+          "execution_start_ms": 1790531588626,
+          "execution_success_ms": 1790531594995,
+          "execution_s": 6.369,
+          "state": "success",
+          "remote_receipt": [
+            "REMOTE | fingerprint=8bfd0f6e12abf2d2 | encode_ms=988.67"
+          ],
+          "seed": 2017,
+          "prompt": "A red ceramic teapot on a wooden table, soft daylight, studio photograph.\nAcceptance variation 0aa08764fa0d, frame 18.",
+          "image_sha256": "561d533c37126f63a893407d21d2324d347d13fa6e7dd8030fee37a8ab402272",
+          "image_size": [
+            512,
+            512
+          ],
+          "source_history_sha256": "6d84332b91e22caa6f23ca6f28b77fcdf0242cee0828908afe1f56c043ab8247",
+          "source_workflow_sha256": "d9d87e187e39daa8d95813c3f2e0f9eb6f4dc52b403691283f6c6c9070be30aa"
+        },
+        {
+          "index": 19,
+          "prompt_id": "3e41a043-1d3a-4061-b463-9c281f789d2b",
+          "execution_start_ms": 1790531595758,
+          "execution_success_ms": 1790531602020,
+          "execution_s": 6.262,
+          "state": "success",
+          "remote_receipt": [
+            "REMOTE | fingerprint=8bfd0f6e12abf2d2 | encode_ms=942.54"
+          ],
+          "seed": 2018,
+          "prompt": "A red ceramic teapot on a wooden table, soft daylight, studio photograph.\nAcceptance variation 0aa08764fa0d, frame 19.",
+          "image_sha256": "99926e14f2d64c26d30b047f7feac6c84a375bb16fbe887c47c77ccd43d21e4f",
+          "image_size": [
+            512,
+            512
+          ],
+          "source_history_sha256": "978bae75792bd0703bba2ba584745e5488d9857e2c900b0803bbda688434ebf3",
+          "source_workflow_sha256": "055c297af4a755fd74569e025c172b459f244f9b68547de34998f65b85c3b32f"
+        },
+        {
+          "index": 20,
+          "prompt_id": "6bcd004a-8828-45ab-8f61-9c9f7283a658",
+          "execution_start_ms": 1790531602670,
+          "execution_success_ms": 1790531608968,
+          "execution_s": 6.298,
+          "state": "success",
+          "remote_receipt": [
+            "REMOTE | fingerprint=8bfd0f6e12abf2d2 | encode_ms=785.55"
+          ],
+          "seed": 2019,
+          "prompt": "A red ceramic teapot on a wooden table, soft daylight, studio photograph.\nAcceptance variation 0aa08764fa0d, frame 20.",
+          "image_sha256": "065eee467789d1a6a3a8ffef63d1f121d188c0b5babc0010038e84b179ecee25",
+          "image_size": [
+            512,
+            512
+          ],
+          "source_history_sha256": "61fbb30915fd1b275235a78b66dc848dbd7f208b58daf8ad02d6b025c94b577b",
+          "source_workflow_sha256": "747e8d68f8b9d5adbf7231ec603ede8049a7540d468013f7eb0409874351243b"
+        }
+      ]
+    }
+  ]
+}

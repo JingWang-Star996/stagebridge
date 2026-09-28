@@ -67,6 +67,8 @@ python scripts/install_nodes.py --comfy-root C:/AI/ComfyUI_windows_portable/Comf
 
 ## 验证与边界
 
+新增[扩展实测与完整参数](docs/EXTENDED-EVIDENCE.zh-CN.md)：Image 三批共 60 张逐次记录（含首张、CSV、seed、输出哈希和真实拼图）、两个 H3 小样，以及配对延迟、并发、故障和权重切换数据。这是历史回执的整理与核对，不冒充在当前版本重新运行整批测试。
+
 ```powershell
 python scripts/inspect_results.py
 python -m pip install -r requirements-test.txt

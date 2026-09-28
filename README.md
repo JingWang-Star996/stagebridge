@@ -4,6 +4,8 @@
 
 **English** | [简体中文](README.zh-CN.md)
 
+New [extended evidence and configuration guide (Chinese)](docs/EXTENDED-EVIDENCE.zh-CN.md): 60 individual Image runs with CSV, first-image timing, seeds and output hashes, two H3 pilot runs, paired latency, concurrency and recovery checks. These are verified extractions of historical receipts, not claims that every batch was rerun on the current release. [Machine-readable data](results/image-60-runs.json).
+
 Move the text/vision encoding stage to a separate GPU host, then let a ComfyUI worker run diffusion, VAE decoding and media output. StageBridge provides an HTTP TE service, four custom nodes, example API workflows and measured results from four NVIDIA laptop GPUs.
 
 **v0.1.0 is an experimental, runnable component release.** It is not pooled VRAM, tensor-parallel sampling or an automatic fleet scheduler. A single worker still needs sufficient GPU and system memory for its own generation stages.

@@ -1,0 +1,179 @@
+{
+  "scope": "Historical live tests. Not all were rerun after every later change; concurrency is TE request concurrency, not four H3 videos simultaneously.",
+  "paired_latency": {
+    "method": "both methods warmed; 3 unique paired prompts/seed42/int8/512px/8steps; alternating order",
+    "all_within_2s": true,
+    "mean_extra_s": 0.44199999999999995,
+    "pairs": [
+      {
+        "index": 0,
+        "prompt": "A orange ceramic bowl on a wooden table beside one small book, soft daylight, studio photograph.",
+        "local_s": 1.632,
+        "remote_s": 3.11,
+        "remote_minus_local_s": 1.478,
+        "within_2s": true,
+        "ids": {
+          "local": "7c76c89e-fe8d-4d19-9e8c-c4b7d0064481",
+          "remote": "97d3bf68-3ed7-4fa3-8d4f-1a251019d989"
+        }
+      },
+      {
+        "index": 1,
+        "prompt": "A turquoise ceramic bowl on a wooden table beside one small book, soft daylight, studio photograph.",
+        "local_s": 2.769,
+        "remote_s": 1.99,
+        "remote_minus_local_s": -0.7790000000000001,
+        "within_2s": true,
+        "ids": {
+          "remote": "016a788f-35f5-478a-993e-85a1d7ab3dde",
+          "local": "7c0fb7fb-b298-487f-9813-b0b00f938ae9"
+        }
+      },
+      {
+        "index": 2,
+        "prompt": "A violet ceramic bowl on a wooden table beside one small book, soft daylight, studio photograph.",
+        "local_s": 1.527,
+        "remote_s": 2.154,
+        "remote_minus_local_s": 0.627,
+        "within_2s": true,
+        "ids": {
+          "local": "068fb355-b9ba-4b8a-9229-15ae8806c6b0",
+          "remote": "9d1f15a6-422d-494c-9d0a-9530739cfb75"
+        }
+      }
+    ]
+  },
+  "paired_pixels": {
+    "scope": "Existing three short-prompt A4 pairs; 5090 local TE vs 3080Ti remote TE, seed 42",
+    "pairs": [
+      {
+        "index": 0,
+        "shape": [
+          512,
+          512,
+          3
+        ],
+        "mean_abs_pixel_channel": 2.744983673095703,
+        "max_abs_pixel_channel": 125,
+        "exact_channel_fraction": 0.09486770629882812,
+        "pixels_with_any_change_fraction": 0.9893951416015625
+      },
+      {
+        "index": 1,
+        "shape": [
+          512,
+          512,
+          3
+        ],
+        "mean_abs_pixel_channel": 1.9852027893066406,
+        "max_abs_pixel_channel": 68,
+        "exact_channel_fraction": 0.15950775146484375,
+        "pixels_with_any_change_fraction": 0.9645500183105469
+      },
+      {
+        "index": 2,
+        "shape": [
+          512,
+          512,
+          3
+        ],
+        "mean_abs_pixel_channel": 1.1411196390787761,
+        "max_abs_pixel_channel": 75,
+        "exact_channel_fraction": 0.3933881123860677,
+        "pixels_with_any_change_fraction": 0.8654975891113281
+      }
+    ]
+  },
+  "edit_pixels": {
+    "shape": [
+      512,
+      512,
+      4
+    ],
+    "pixel_equal": false,
+    "mean_abs_channel_diff_0_255": 0.3282480239868164,
+    "max_abs_channel_diff_0_255": 20.0,
+    "visual_review": "Both images show the same blue teapot, wood table, silhouette and highlights. Minor pixel variation; not bitwise image equivalence."
+  },
+  "concurrency": {
+    "client_count": 3,
+    "clients": [
+      "5090",
+      "4080",
+      "5080l"
+    ],
+    "gates": {
+      "three_successful_responses": "PASS",
+      "distinct_host_identities": "PASS",
+      "same_service_and_barrier": "PASS",
+      "three_distinct_inputs_for_routing": "PASS",
+      "clock_sync_evidence": "PASS",
+      "barrier_and_overlap": "PASS",
+      "all_three_queue_wait_le_3000ms": "PASS",
+      "response_receipt_integrity": "PASS",
+      "each_client_matches_own_solo_baseline": "PASS",
+      "queue_contention_exercised": "PASS"
+    },
+    "observed_start_skew_ms": 2.9757022857666016,
+    "overlap_lower_bound_ms": 556.7211589813232,
+    "queue_wait_ms": [
+      0.32,
+      860.04,
+      469.09
+    ],
+    "max_queue_wait_ms": 860.04,
+    "queue_contention_observed": true
+  },
+  "fault_recovery": {
+    "e2e-5090-fallback": {
+      "success": true,
+      "prompt_id": "4dd2cdb9-4975-4870-aa4f-7c9cb5037f80",
+      "status_text": [
+        "REMOTE FALLBACK | fingerprint=unavailable | local=qwen3vl_8b_int8_convrot.safetensors | Remote encoder network connection failed or timed out."
+      ],
+      "history_sha256": "c11f17eaa3ba71c9296a0eb8f0994d6116621f299565f1fde0d374006c2ff28f"
+    },
+    "e2e-5090-recovered": {
+      "success": true,
+      "prompt_id": "33d7aaae-a386-4666-90e2-8f9c75ac3d6c",
+      "status_text": [
+        "REMOTE | fingerprint=8bfd0f6e12abf2d2 | encode_ms=29076.84"
+      ],
+      "history_sha256": "763c122a02c3ba9edee0c0193bef8e6ea4239deada7d69932e70cb08f76f03a0"
+    }
+  },
+  "weight_change": {
+    "new_fingerprint": "f560a1c8c2646935",
+    "new_encoding": {
+      "shape": [
+        1,
+        41,
+        4096
+      ],
+      "dtype": "F32",
+      "fingerprint": "f560a1c8c2646935",
+      "sha256": "43508a7ba6cf30fe195d4038e045db83fc6a1abded5734b44e7ea6c37589d1d7"
+    },
+    "http_409": {
+      "status": "PASS",
+      "expected": "f560a1c8c2646935",
+      "submitted": "8bfd0f6e12abf2d2"
+    },
+    "fallback_enabled": true,
+    "rejected_images": 0,
+    "restored_fingerprint": "8bfd0f6e12abf2d2"
+  },
+  "direct_latency_s": [
+    1.290482,
+    1.05841,
+    1.042146,
+    1.050802,
+    1.051121
+  ],
+  "idle_15s_maintenance_off_rtt_ms": [
+    2046.538,
+    1203.041,
+    2178.034
+  ],
+  "latency_scope": "Different diagnostic windows; retain first/slow samples, not latency SLA."
+}

@@ -1,0 +1,302 @@
+[
+  {
+    "worker_gpu": "3080 Ti Laptop",
+    "index": 1,
+    "image_sha256": "2b24118e923ee79c18f45b39486bed1127dfc3faf4685396492b6a792f3f1612"
+  },
+  {
+    "worker_gpu": "3080 Ti Laptop",
+    "index": 2,
+    "image_sha256": "7cd5c715424d48bde2c1637dcb3614c56387ea7176e4e8d23884aceffb3d68eb"
+  },
+  {
+    "worker_gpu": "3080 Ti Laptop",
+    "index": 3,
+    "image_sha256": "fd530c2e431a74d265cf6ca4c4274bab9523b5b33ce61f8a9e83634d85328ec2"
+  },
+  {
+    "worker_gpu": "3080 Ti Laptop",
+    "index": 4,
+    "image_sha256": "c9c2cf576d555952963b2a184b0f398cb50e0b9e6f5a606f25f24c368e81a70e"
+  },
+  {
+    "worker_gpu": "3080 Ti Laptop",
+    "index": 5,
+    "image_sha256": "be018f41f394347f2c2630b64d9e09ceedd101a0f05ddd6d37c559d21a9793dd"
+  },
+  {
+    "worker_gpu": "3080 Ti Laptop",
+    "index": 6,
+    "image_sha256": "37bdff75f4abbd466248ba8aee472b3f30b7208b0e1be345bc47bb012502169d"
+  },
+  {
+    "worker_gpu": "3080 Ti Laptop",
+    "index": 7,
+    "image_sha256": "313cca7d69f678401eeae5d33e137d18589faf08ff273162740f194b20be23cf"
+  },
+  {
+    "worker_gpu": "3080 Ti Laptop",
+    "index": 8,
+    "image_sha256": "4637167f7b4dbb5e1cf76963e3489aaebbdcff1daa38225294ecf3f2ec38918f"
+  },
+  {
+    "worker_gpu": "3080 Ti Laptop",
+    "index": 9,
+    "image_sha256": "4c061faa04760a1fc569d681c07e37ceeef22456dc36a10295c88f3758c5e85d"
+  },
+  {
+    "worker_gpu": "3080 Ti Laptop",
+    "index": 10,
+    "image_sha256": "635fe425032f6ea631e82477925ac3014667abc2edc842dd6fb0e8e1003cea09"
+  },
+  {
+    "worker_gpu": "3080 Ti Laptop",
+    "index": 11,
+    "image_sha256": "714b65912787a0c3483a402aa0cfab81ba56afebceb16b40410a3097b8a61843"
+  },
+  {
+    "worker_gpu": "3080 Ti Laptop",
+    "index": 12,
+    "image_sha256": "ced88e58e51da81b2001a75d98afba89aecd8c6e46dec282ecc21ab69a212e2f"
+  },
+  {
+    "worker_gpu": "3080 Ti Laptop",
+    "index": 13,
+    "image_sha256": "369a2a4d274dae2d4a7d8aaef1986a3c071f337d87bc41565b28b54b1cebef8d"
+  },
+  {
+    "worker_gpu": "3080 Ti Laptop",
+    "index": 14,
+    "image_sha256": "cedf60cb2942dc9643086d0e0894ee22e7806b8243f2d885844d0fbd31d0bdf3"
+  },
+  {
+    "worker_gpu": "3080 Ti Laptop",
+    "index": 15,
+    "image_sha256": "a84c63fd3e193f056a70536909867c1f41da2b7a6a9566bdd74d909ed36cd59e"
+  },
+  {
+    "worker_gpu": "3080 Ti Laptop",
+    "index": 16,
+    "image_sha256": "74c599e0af279fb8ebb1b0ca71dfd43d10528de733251b59931bd1041b4b54f4"
+  },
+  {
+    "worker_gpu": "3080 Ti Laptop",
+    "index": 17,
+    "image_sha256": "3469eea4313b931007191aee62b4233322d007d293bb7d14b8af6dec2653ba8b"
+  },
+  {
+    "worker_gpu": "3080 Ti Laptop",
+    "index": 18,
+    "image_sha256": "2a873255de812619f3831ba2211be932164d4a3aab54cc88a2068e3e3014529b"
+  },
+  {
+    "worker_gpu": "3080 Ti Laptop",
+    "index": 19,
+    "image_sha256": "161f6502d8542997f689ee4aa672c31b744347f2fac305c0ed3f1b69637fa42e"
+  },
+  {
+    "worker_gpu": "3080 Ti Laptop",
+    "index": 20,
+    "image_sha256": "a03affa1bfe9b73ec180a1ce5d75c1a8337fa7c03f767ace4f9360994b2943c6"
+  },
+  {
+    "worker_gpu": "5080 Laptop",
+    "index": 1,
+    "image_sha256": "7bf2e7be2a47a963b3e567c83d3d53664ac654c726ff60cafa7e2dbd80492fff"
+  },
+  {
+    "worker_gpu": "5080 Laptop",
+    "index": 2,
+    "image_sha256": "05ed15686c0cbf9311c2e428f7ec206af3203b235611ab2233d383980a6d0a5e"
+  },
+  {
+    "worker_gpu": "5080 Laptop",
+    "index": 3,
+    "image_sha256": "02b390ca0b8c240c2fc445d1a2f98acc31bc73f27f62ca641521afd0808ed6dd"
+  },
+  {
+    "worker_gpu": "5080 Laptop",
+    "index": 4,
+    "image_sha256": "0630d47fd9cf5ae756647f8067f1c0842950442941b25db9d797eb8e01eb160b"
+  },
+  {
+    "worker_gpu": "5080 Laptop",
+    "index": 5,
+    "image_sha256": "8d082450b64bc72ff1612fbd2236d73a659e26dd92da2e2aaedfb7f46d8f4fd9"
+  },
+  {
+    "worker_gpu": "5080 Laptop",
+    "index": 6,
+    "image_sha256": "6f522f0e3b9c8a3b4f088d4a814eb7d2cec4890d5e681252efce76787d1130b7"
+  },
+  {
+    "worker_gpu": "5080 Laptop",
+    "index": 7,
+    "image_sha256": "0cb2df7c8d8c9ba72cd36134c6027e51b935a40c9638dab2bee6d1750874f7b6"
+  },
+  {
+    "worker_gpu": "5080 Laptop",
+    "index": 8,
+    "image_sha256": "f8fc0f6de7966b50f05e6406e146ffe0e44d988e15a4ca289c8ccee112b995c5"
+  },
+  {
+    "worker_gpu": "5080 Laptop",
+    "index": 9,
+    "image_sha256": "cba5afe32a61859505fc03b36e286dd5ae8e7cf4215f0f461958093afebc2d52"
+  },
+  {
+    "worker_gpu": "5080 Laptop",
+    "index": 10,
+    "image_sha256": "99cac6b600a363eb41228bfdd75e070f7a57040cc7a4c8fa30f8f8da3480da36"
+  },
+  {
+    "worker_gpu": "5080 Laptop",
+    "index": 11,
+    "image_sha256": "73b3df9b488554e2b16570fdedb672d822412687f856675026c86879b4559a95"
+  },
+  {
+    "worker_gpu": "5080 Laptop",
+    "index": 12,
+    "image_sha256": "8b001520a2267eb214a997393248d2622932b0d3d52dc76701762f0efff67a80"
+  },
+  {
+    "worker_gpu": "5080 Laptop",
+    "index": 13,
+    "image_sha256": "4c689a3353bcec841964e544f4ed5929bf46b5c6ed09dd34e3032eed35241fe5"
+  },
+  {
+    "worker_gpu": "5080 Laptop",
+    "index": 14,
+    "image_sha256": "d3697729bbb001c3ba33c1d8935f5163333add50957b05e00cb860de602ef6ef"
+  },
+  {
+    "worker_gpu": "5080 Laptop",
+    "index": 15,
+    "image_sha256": "e81e0f9577f2486162c529c2f53a69086d94fa5b51d6c6fc003aad61fea126f1"
+  },
+  {
+    "worker_gpu": "5080 Laptop",
+    "index": 16,
+    "image_sha256": "0b894e241a19cfd8b789bd0775ea570a16eed0e59d82037c1925277610f0a0df"
+  },
+  {
+    "worker_gpu": "5080 Laptop",
+    "index": 17,
+    "image_sha256": "fee03af9cdf6889e90ac4d212689e8020d98b9fae430216ec0850751e1bbde6d"
+  },
+  {
+    "worker_gpu": "5080 Laptop",
+    "index": 18,
+    "image_sha256": "1d3a6424b2931c267e51a6589de1e1ac92be54cb3624860390e7b9415b703903"
+  },
+  {
+    "worker_gpu": "5080 Laptop",
+    "index": 19,
+    "image_sha256": "0b582a0900fba12947a898cf223db0eafb265b4ebf232eb70d291691b0a7b387"
+  },
+  {
+    "worker_gpu": "5080 Laptop",
+    "index": 20,
+    "image_sha256": "367cbf864b159a8df6572227afe041e2552e8348d30ce7db00eda5fcc4790ef2"
+  },
+  {
+    "worker_gpu": "4080 Laptop",
+    "index": 1,
+    "image_sha256": "d6c1af0ed4c10c23a61cfb5115c9a68b9dd72d0b7d13853322cef7e1118a8416"
+  },
+  {
+    "worker_gpu": "4080 Laptop",
+    "index": 2,
+    "image_sha256": "48f27eb45ec6d48eb8f5d6c2c3bb4bc8757e49f5f68cc42b8f51843570e831a5"
+  },
+  {
+    "worker_gpu": "4080 Laptop",
+    "index": 3,
+    "image_sha256": "8974f39400461f75cce1a28860c189895828250e2e5bcc0ba26c7c15d4924285"
+  },
+  {
+    "worker_gpu": "4080 Laptop",
+    "index": 4,
+    "image_sha256": "fe3f9a77939399b8f5964a32b47c31cbd562d36b510f8aced0b1b62505d3cc51"
+  },
+  {
+    "worker_gpu": "4080 Laptop",
+    "index": 5,
+    "image_sha256": "351e5e1be298f3eb86756277cbef6fef4f9c2a267b02f9c6069bd01164a24e6a"
+  },
+  {
+    "worker_gpu": "4080 Laptop",
+    "index": 6,
+    "image_sha256": "f830d8eed621dbd131c057c6d1b8938ee0beb83d3b49740f33b5bc325d33ee04"
+  },
+  {
+    "worker_gpu": "4080 Laptop",
+    "index": 7,
+    "image_sha256": "142bc0cf74b4d746306cb003f6438506a3e9b9b491547375307aafc87ab7bda3"
+  },
+  {
+    "worker_gpu": "4080 Laptop",
+    "index": 8,
+    "image_sha256": "eafcfc251a2fc7913c7a050137b8a78b0b616b8f354bac7a66b0aae620007f16"
+  },
+  {
+    "worker_gpu": "4080 Laptop",
+    "index": 9,
+    "image_sha256": "53f56796bb58b846045f57ff52d249531ded4820657fc4f5a6e39822c7c7f7c2"
+  },
+  {
+    "worker_gpu": "4080 Laptop",
+    "index": 10,
+    "image_sha256": "17cb5330f552985afc5d0bce2bbbb85cc4fa91a92a2eee2f40457f6f5ee99657"
+  },
+  {
+    "worker_gpu": "4080 Laptop",
+    "index": 11,
+    "image_sha256": "04214fd411841d8903d9fd2187e0665b9b7d367fa03a96398bdd77a66995ddaf"
+  },
+  {
+    "worker_gpu": "4080 Laptop",
+    "index": 12,
+    "image_sha256": "562fa215ab05f790cdb2e5558c5144be27b56876ca352a9f09f9540eccbc7050"
+  },
+  {
+    "worker_gpu": "4080 Laptop",
+    "index": 13,
+    "image_sha256": "cf9cea8d2c317e222c79d5288cf5d38be3575cba6e1c0cabcd24fd329cd581ac"
+  },
+  {
+    "worker_gpu": "4080 Laptop",
+    "index": 14,
+    "image_sha256": "80ed97ef1b5549629ec5777d7d41ee44a9673c69d6ce8761fb90f428eb550703"
+  },
+  {
+    "worker_gpu": "4080 Laptop",
+    "index": 15,
+    "image_sha256": "dd36679e1d2ea96f69e22f1d81dd896ac889a1a03c6e185be6ce36b2a16288da"
+  },
+  {
+    "worker_gpu": "4080 Laptop",
+    "index": 16,
+    "image_sha256": "7e6e1ddd04289df6a1759ddf8cfb617535cdf29805b0eedf4c6a7e81fc24c285"
+  },
+  {
+    "worker_gpu": "4080 Laptop",
+    "index": 17,
+    "image_sha256": "c5fba3f142919e3523b5e73d5e3279a536f013fbb7b28991fcc94ebbe405686d"
+  },
+  {
+    "worker_gpu": "4080 Laptop",
+    "index": 18,
+    "image_sha256": "561d533c37126f63a893407d21d2324d347d13fa6e7dd8030fee37a8ab402272"
+  },
+  {
+    "worker_gpu": "4080 Laptop",
+    "index": 19,
+    "image_sha256": "99926e14f2d64c26d30b047f7feac6c84a375bb16fbe887c47c77ccd43d21e4f"
+  },
+  {
+    "worker_gpu": "4080 Laptop",
+    "index": 20,
+    "image_sha256": "065eee467789d1a6a3a8ffef63d1f121d188c0b5babc0010038e84b179ecee25"
+  }
+]
