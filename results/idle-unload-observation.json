@@ -1,0 +1,14 @@
+{
+  "date": "2026-09-28",
+  "profile": "minimax_h3",
+  "idle_unload_min": 10,
+  "last_encode_local_time": "22:17:38",
+  "checked_local_time": "22:28:02",
+  "service_running": true,
+  "image_loaded": false,
+  "h3_loaded": false,
+  "queue_len": 0,
+  "gpu_used_before_mib": 16966,
+  "gpu_used_after_mib": 372,
+  "source": "Recorded live health and nvidia-smi tool receipt; no continuous sampling trace archived."
+}

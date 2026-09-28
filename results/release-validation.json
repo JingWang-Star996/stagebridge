@@ -1,0 +1,16 @@
+{
+  "date": "2026-09-28",
+  "version": "0.1.0",
+  "public_unit_tests": {"passed": 86, "failed": 0, "seconds": 5.577, "scope": "Mock encoders and loopback HTTP; no model weights loaded"},
+  "packaging_checks": {
+    "source_files_unchanged_since_export": 21,
+    "python_syntax": "PASS",
+    "markdown_local_links": "PASS",
+    "known_private_endpoint_path_and_token_pattern_scan": "PASS",
+    "installer_dry_run": "PASS",
+    "installer_fresh_install_in_fixture": "PASS",
+    "installer_refuses_existing_directory": "PASS",
+    "archive_integrity": "PASS"
+  },
+  "limits": "Not a clean-machine model installation test or a new GPU generation run. Historical GPU evidence is documented separately."
+}

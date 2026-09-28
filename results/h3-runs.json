@@ -1,0 +1,184 @@
+{
+  "date": "2026-09-28",
+  "timing": "ComfyUI execution_start to execution_success; one recorded full sample per worker",
+  "limits": [
+    "Different TE hosts, cached nodes and cold/warm states. Not a controlled GPU ranking.",
+    "Runs were sequential, not a four-worker throughput benchmark.",
+    "Historical input image and MP4 files are not distributed. Frame montages are illustrative output evidence."
+  ],
+  "runs": [
+    {
+      "worker_gpu": "5090 Laptop",
+      "worker_vram_gib": 24,
+      "te_gpu": "5080 Laptop",
+      "prompt_id": "961d4ece-d971-4243-9f1e-24167e42b299",
+      "status": "success",
+      "width": 864,
+      "height": 480,
+      "frames": 124,
+      "fps": 24,
+      "steps": 10,
+      "seed": 90409231077532,
+      "history_elapsed_s": 187.57,
+      "remote_te_encode_ms": 70228.41,
+      "fingerprint": "35a88d51044231fe",
+      "cached_node_ids": [],
+      "video_sha256": "aabb14ee7d872d4b32a7a4793c75f0976c87fea4f8daf50afe7bb8c59390f146",
+      "video_bytes": 640029,
+      "history_source_sha256": "d233a90c4e36668d55704f0cf347bba1f1101211fbf616eae232a9ed2c4ff78a",
+      "reference_image_sha256": "30e7ad64cc2cebad1c2fa360bb0c822b071dab4d61e4593508ea42182c6a3b6f"
+    },
+    {
+      "worker_gpu": "5080 Laptop",
+      "worker_vram_gib": 16,
+      "te_gpu": "5090 Laptop",
+      "prompt_id": "6a760268-7bed-4110-a46d-8b483444a973",
+      "status": "success",
+      "width": 864,
+      "height": 480,
+      "frames": 124,
+      "fps": 24,
+      "steps": 10,
+      "seed": 90409231077532,
+      "history_elapsed_s": 233.113,
+      "remote_te_encode_ms": 49684.72,
+      "fingerprint": "35a88d51044231fe",
+      "cached_node_ids": [],
+      "video_sha256": "5791f2823094f9e80730aeb3c7e4e2731c748178f288d67746d1c828c473c6d5",
+      "video_bytes": 638154,
+      "history_source_sha256": "587313ea4f9a3e07b9f6b8dbf3114739a2d090253d99f27a9f68d3068f19de98",
+      "reference_image_sha256": "30e7ad64cc2cebad1c2fa360bb0c822b071dab4d61e4593508ea42182c6a3b6f",
+      "driver_elapsed_s": 237.804,
+      "min_ram_free_bytes": 29882621952,
+      "min_vram_free_bytes": 312627754,
+      "telemetry_samples": 23,
+      "te_loaded_before_submission": false,
+      "media_inspection": {
+        "sha256": "5791f2823094f9e80730aeb3c7e4e2731c748178f288d67746d1c828c473c6d5",
+        "bytes": 638154,
+        "video_codec": "h264",
+        "width": 864,
+        "height": 480,
+        "frames_decoded": 124,
+        "fps": "24",
+        "first_last_mean_absolute_pixel_diff": 29.80773855452675,
+        "audio_streams": [
+          {
+            "codec": "aac",
+            "sample_rate": 32000,
+            "channels": 2
+          }
+        ],
+        "audio_samples_decoded": 165888,
+        "audio_rms": 0.010540122757951268,
+        "audio_peak": 0.15448129177093506
+      }
+    },
+    {
+      "worker_gpu": "4080 Laptop",
+      "worker_vram_gib": 12,
+      "te_gpu": "5080 Laptop",
+      "prompt_id": "214a128b-9d27-4eca-b287-d5ede156b20b",
+      "status": "success",
+      "width": 864,
+      "height": 480,
+      "frames": 124,
+      "fps": 24,
+      "steps": 10,
+      "seed": 90409231077532,
+      "history_elapsed_s": 243.159,
+      "remote_te_encode_ms": 64800.67,
+      "fingerprint": "35a88d51044231fe",
+      "cached_node_ids": [
+        "1",
+        "3",
+        "4",
+        "5",
+        "9",
+        "10",
+        "11"
+      ],
+      "video_sha256": "90e47a609521b7585384e1bbe46f00f9fce7c08322ea1492129b9f9a0d36dfc4",
+      "video_bytes": 642041,
+      "history_source_sha256": "482162d5d8d8a402abb56be57df31647b1a8a640bac227bba8ad576674400e0e",
+      "reference_image_sha256": "30e7ad64cc2cebad1c2fa360bb0c822b071dab4d61e4593508ea42182c6a3b6f",
+      "driver_elapsed_s": 253.313,
+      "min_ram_free_bytes": 1654136832,
+      "min_vram_free_bytes": 318219722,
+      "telemetry_samples": 25,
+      "media_inspection": {
+        "sha256": "90e47a609521b7585384e1bbe46f00f9fce7c08322ea1492129b9f9a0d36dfc4",
+        "bytes": 642041,
+        "video_codec": "h264",
+        "width": 864,
+        "height": 480,
+        "frames_decoded": 124,
+        "fps": "24",
+        "first_last_mean_absolute_pixel_diff": 29.836393229166667,
+        "audio_streams": [
+          {
+            "codec": "aac",
+            "sample_rate": 32000,
+            "channels": 2
+          }
+        ],
+        "audio_samples_decoded": 165888,
+        "audio_rms": 0.009465759015471503,
+        "audio_peak": 0.1590053141117096
+      }
+    },
+    {
+      "worker_gpu": "3080 Ti Laptop",
+      "worker_vram_gib": 16,
+      "te_gpu": "5080 Laptop",
+      "prompt_id": "3591dbaf-5bfa-4501-82da-9c65e494d17f",
+      "status": "success",
+      "width": 864,
+      "height": 480,
+      "frames": 124,
+      "fps": 24,
+      "steps": 10,
+      "seed": 90409231077532,
+      "history_elapsed_s": 261.838,
+      "remote_te_encode_ms": 68242.9,
+      "fingerprint": "35a88d51044231fe",
+      "cached_node_ids": [
+        "1",
+        "3",
+        "4",
+        "5",
+        "9",
+        "10",
+        "11"
+      ],
+      "video_sha256": "02865ca541e02d9f1d3b4a2abc0d8426b746acd7f537654b712ecfd86d1bd54c",
+      "video_bytes": 636405,
+      "history_source_sha256": "899e66728e4dd923cc5d9b7fca02688497ba3741217f04a13330dd8899dbf24b",
+      "reference_image_sha256": "30e7ad64cc2cebad1c2fa360bb0c822b071dab4d61e4593508ea42182c6a3b6f",
+      "driver_elapsed_s": 262.715,
+      "min_ram_free_bytes": 20664619008,
+      "min_vram_free_bytes": 297248202,
+      "telemetry_samples": 26,
+      "media_inspection": {
+        "sha256": "02865ca541e02d9f1d3b4a2abc0d8426b746acd7f537654b712ecfd86d1bd54c",
+        "bytes": 636405,
+        "video_codec": "h264",
+        "width": 864,
+        "height": 480,
+        "frames_decoded": 124,
+        "fps": "24",
+        "first_last_mean_absolute_pixel_diff": 29.486895576131687,
+        "audio_streams": [
+          {
+            "codec": "aac",
+            "sample_rate": 32000,
+            "channels": 2
+          }
+        ],
+        "audio_samples_decoded": 165888,
+        "audio_rms": 0.009424549720425026,
+        "audio_peak": 0.15268506109714508
+      }
+    }
+  ]
+}

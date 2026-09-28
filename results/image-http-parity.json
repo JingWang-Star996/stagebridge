@@ -1,0 +1,62 @@
+{
+  "all_bitwise_equal": true,
+  "wrong_fingerprint_http": 409,
+  "cases": [
+    {
+      "mode": "t2i",
+      "case": 0,
+      "bitwise_equal": true,
+      "extras_equal": true,
+      "max_abs_diff": 0.0,
+      "fingerprint": "8bfd0f6e12abf2d2"
+    },
+    {
+      "mode": "t2i",
+      "case": 1,
+      "bitwise_equal": true,
+      "extras_equal": true,
+      "max_abs_diff": 0.0,
+      "fingerprint": "8bfd0f6e12abf2d2"
+    },
+    {
+      "mode": "t2i",
+      "case": 2,
+      "bitwise_equal": true,
+      "extras_equal": true,
+      "max_abs_diff": 0.0,
+      "fingerprint": "8bfd0f6e12abf2d2"
+    },
+    {
+      "mode": "t2i",
+      "case": 3,
+      "bitwise_equal": true,
+      "extras_equal": true,
+      "max_abs_diff": 0.0,
+      "fingerprint": "8bfd0f6e12abf2d2"
+    },
+    {
+      "mode": "t2i",
+      "case": 4,
+      "bitwise_equal": true,
+      "extras_equal": true,
+      "max_abs_diff": 0.0,
+      "fingerprint": "8bfd0f6e12abf2d2"
+    },
+    {
+      "mode": "edit",
+      "case": 0,
+      "bitwise_equal": true,
+      "extras_equal": true,
+      "max_abs_diff": 0.0,
+      "fingerprint": "8bfd0f6e12abf2d2"
+    },
+    {
+      "mode": "edit",
+      "case": 1,
+      "bitwise_equal": true,
+      "extras_equal": true,
+      "max_abs_diff": 0.0,
+      "fingerprint": "8bfd0f6e12abf2d2"
+    }
+  ]
+}

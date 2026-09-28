@@ -1,0 +1,78 @@
+[
+  {
+    "worker": "5090 Laptop",
+    "video_sha256": "aabb14ee7d872d4b32a7a4793c75f0976c87fea4f8daf50afe7bb8c59390f146",
+    "frames_decoded": 124,
+    "selected_frames": [
+      {
+        "index": 0,
+        "time_s": 0.0
+      },
+      {
+        "index": 62,
+        "time_s": 2.5833333333333335
+      },
+      {
+        "index": 123,
+        "time_s": 5.125
+      }
+    ]
+  },
+  {
+    "worker": "5080 Laptop",
+    "video_sha256": "5791f2823094f9e80730aeb3c7e4e2731c748178f288d67746d1c828c473c6d5",
+    "frames_decoded": 124,
+    "selected_frames": [
+      {
+        "index": 0,
+        "time_s": 0.0
+      },
+      {
+        "index": 62,
+        "time_s": 2.5833333333333335
+      },
+      {
+        "index": 123,
+        "time_s": 5.125
+      }
+    ]
+  },
+  {
+    "worker": "4080 Laptop",
+    "video_sha256": "90e47a609521b7585384e1bbe46f00f9fce7c08322ea1492129b9f9a0d36dfc4",
+    "frames_decoded": 124,
+    "selected_frames": [
+      {
+        "index": 0,
+        "time_s": 0.0
+      },
+      {
+        "index": 62,
+        "time_s": 2.5833333333333335
+      },
+      {
+        "index": 123,
+        "time_s": 5.125
+      }
+    ]
+  },
+  {
+    "worker": "3080 Ti Laptop",
+    "video_sha256": "02865ca541e02d9f1d3b4a2abc0d8426b746acd7f537654b712ecfd86d1bd54c",
+    "frames_decoded": 124,
+    "selected_frames": [
+      {
+        "index": 0,
+        "time_s": 0.0
+      },
+      {
+        "index": 62,
+        "time_s": 2.5833333333333335
+      },
+      {
+        "index": 123,
+        "time_s": 5.125
+      }
+    ]
+  }
+]

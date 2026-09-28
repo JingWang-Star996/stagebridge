@@ -1,0 +1,15 @@
+# Edit paths and remove a profile if its checkpoint is not installed.
+host: 127.0.0.1  # Set 0.0.0.0 explicitly for trusted LAN clients.
+port: 8765
+comfy_root: 'C:/AI/ComfyUI_windows_portable/ComfyUI'
+profiles:
+  qwen3vl_8b:
+    ckpt_path: 'C:/AI/ComfyUI_windows_portable/ComfyUI/models/text_encoders/qwen3vl_8b_int8_convrot.safetensors'
+  minimax_h3:
+    ckpt_path: 'C:/AI/ComfyUI_windows_portable/ComfyUI/models/text_encoders/qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors'
+queue_depth: 16
+queue_wait_timeout_s: 60
+exclusive_profiles: true
+idle_unload_min: 10
+maintenance_interval_s: 0
+auth_token: null  # Prefer TE_AUTH_TOKEN in the server environment.

@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.deps/
+.venv/
+config.local.yaml
+.env
+dist/
+logs/
+*.safetensors
+*.pt
+*.pth
+*.mp4

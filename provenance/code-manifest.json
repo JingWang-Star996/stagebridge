@@ -1,0 +1,133 @@
+{
+  "date": "2026-09-28",
+  "source": "local tested te-split working tree",
+  "files": [
+    {
+      "path": "run_server.py",
+      "source_sha256": "81f0985b2fc7bd25085dc50005138b1d2f1bc89499a063a204ed1137887d5537",
+      "release_sha256": "81f0985b2fc7bd25085dc50005138b1d2f1bc89499a063a204ed1137887d5537",
+      "unchanged": true
+    },
+    {
+      "path": "te_server/codec.py",
+      "source_sha256": "c1a7936b581bf18d283c1d102f2ff598b9dace5f992265e01e255ce9d1ccbe4a",
+      "release_sha256": "c1a7936b581bf18d283c1d102f2ff598b9dace5f992265e01e255ce9d1ccbe4a",
+      "unchanged": true
+    },
+    {
+      "path": "te_server/encoder.py",
+      "source_sha256": "e354d52cde6e95e16c1d1ff3db08827c73ace31c4171faa9a7668997cbfe162a",
+      "release_sha256": "e354d52cde6e95e16c1d1ff3db08827c73ace31c4171faa9a7668997cbfe162a",
+      "unchanged": true
+    },
+    {
+      "path": "te_server/fingerprint.py",
+      "source_sha256": "baebeb817a658b76e161f14a64ded3aecc4295e184104b546b6c53848f00d16c",
+      "release_sha256": "baebeb817a658b76e161f14a64ded3aecc4295e184104b546b6c53848f00d16c",
+      "unchanged": true
+    },
+    {
+      "path": "te_server/server.py",
+      "source_sha256": "7b0d7b46b5e6bc90e2e55cff2fdd738de26edf25837964fef1fbc19309da6c92",
+      "release_sha256": "7b0d7b46b5e6bc90e2e55cff2fdd738de26edf25837964fef1fbc19309da6c92",
+      "unchanged": true
+    },
+    {
+      "path": "te_server/__init__.py",
+      "source_sha256": "91447944015cec709e8aa7655f7e9d64e1e4508e7023a57fe3746911c0fc6fed",
+      "release_sha256": "91447944015cec709e8aa7655f7e9d64e1e4508e7023a57fe3746911c0fc6fed",
+      "unchanged": true
+    },
+    {
+      "path": "comfyui_nodes/client.py",
+      "source_sha256": "85cf31db5dbe147c2c6fd9aef53dde87e86f5323785315a75eb6b45eda6eaa19",
+      "release_sha256": "5a8d9247da3682e17b0d9ed484e0400f8a15dda63827c9f58684cb29acf41c25",
+      "unchanged": false
+    },
+    {
+      "path": "comfyui_nodes/codec.py",
+      "source_sha256": "8e1f2228922c2824684a7bdd064b83b011b7f99b699b9428ec9f62d224bc0795",
+      "release_sha256": "8e1f2228922c2824684a7bdd064b83b011b7f99b699b9428ec9f62d224bc0795",
+      "unchanged": true
+    },
+    {
+      "path": "comfyui_nodes/errors.py",
+      "source_sha256": "4bbcf75887c5c63c9a0569e0c895cf4559b0f69cc5a6f885260ef0023d9f71f3",
+      "release_sha256": "4bbcf75887c5c63c9a0569e0c895cf4559b0f69cc5a6f885260ef0023d9f71f3",
+      "unchanged": true
+    },
+    {
+      "path": "comfyui_nodes/native.py",
+      "source_sha256": "96afbf3960442619f13e804fda15f22f08e4ecea4bf325434bf77f94a2950c73",
+      "release_sha256": "96afbf3960442619f13e804fda15f22f08e4ecea4bf325434bf77f94a2950c73",
+      "unchanged": true
+    },
+    {
+      "path": "comfyui_nodes/remote_h3.py",
+      "source_sha256": "b678f786a40ab74bfa4de586c366afdfe2e2249677e393f381d8faac5f74984f",
+      "release_sha256": "8ddc7173f0c661d041aa27a7a07ac550f7d8284b780bfe1073a1da709eac47c0",
+      "unchanged": false
+    },
+    {
+      "path": "comfyui_nodes/remote_te_edit.py",
+      "source_sha256": "288fab4a66f251950989fd8d18b4c2f010b40c7f96653f05e86197b677a9658a",
+      "release_sha256": "288fab4a66f251950989fd8d18b4c2f010b40c7f96653f05e86197b677a9658a",
+      "unchanged": true
+    },
+    {
+      "path": "comfyui_nodes/remote_te_node.py",
+      "source_sha256": "71c63ac69e577451058745022da3897fef90c950532f6bcba7030fee3a91b397",
+      "release_sha256": "71c63ac69e577451058745022da3897fef90c950532f6bcba7030fee3a91b397",
+      "unchanged": true
+    },
+    {
+      "path": "comfyui_nodes/__init__.py",
+      "source_sha256": "5169e6d6795682e0d80f558a21305cb5b0a57e5d0c1ed0461fdbbdfeb45b9470",
+      "release_sha256": "5169e6d6795682e0d80f558a21305cb5b0a57e5d0c1ed0461fdbbdfeb45b9470",
+      "unchanged": true
+    },
+    {
+      "path": "comfyui_nodes/web/remote_te.js",
+      "source_sha256": "250a9f9622c070dc1a22c425a77d0ae4b47c6e0722e7d8879a82e820cf1b2336",
+      "release_sha256": "250a9f9622c070dc1a22c425a77d0ae4b47c6e0722e7d8879a82e820cf1b2336",
+      "unchanged": true
+    },
+    {
+      "path": "tests/test_client.py",
+      "source_sha256": "da4695af7fc22f794456aeb1483625e8ecad1b35773105cebbca4bdd4dd75669",
+      "release_sha256": "da4695af7fc22f794456aeb1483625e8ecad1b35773105cebbca4bdd4dd75669",
+      "unchanged": true
+    },
+    {
+      "path": "tests/test_keepalive_http.py",
+      "source_sha256": "725a37e3882d94236dfca19be8979b4a3ca0655429657e6bc3097a161c4b2822",
+      "release_sha256": "725a37e3882d94236dfca19be8979b4a3ca0655429657e6bc3097a161c4b2822",
+      "unchanged": true
+    },
+    {
+      "path": "tests/test_keepalive_nodes.py",
+      "source_sha256": "b86713c993ec7725953fac41e3bc715d67054f5dacdfe041dee3dd3e653f0f33",
+      "release_sha256": "b86713c993ec7725953fac41e3bc715d67054f5dacdfe041dee3dd3e653f0f33",
+      "unchanged": true
+    },
+    {
+      "path": "tests/test_maintenance.py",
+      "source_sha256": "8579212f2d1cbccf459df18737d6fadcd64df227460914f7345640590b0bd7ca",
+      "release_sha256": "8579212f2d1cbccf459df18737d6fadcd64df227460914f7345640590b0bd7ca",
+      "unchanged": true
+    },
+    {
+      "path": "tests/test_queue_cancel.py",
+      "source_sha256": "0bda9ecd1aace27a87d9e3d61636d76f01a7361afe65807d126fc5dc148f459a",
+      "release_sha256": "0bda9ecd1aace27a87d9e3d61636d76f01a7361afe65807d126fc5dc148f459a",
+      "unchanged": true
+    },
+    {
+      "path": "tests/test_server.py",
+      "source_sha256": "dd4efc1873ab9ce84e70d25d5cc5c104b176bdafa699802314e4a773f84fb110",
+      "release_sha256": "dd4efc1873ab9ce84e70d25d5cc5c104b176bdafa699802314e4a773f84fb110",
+      "unchanged": true
+    }
+  ],
+  "changes": "Only client default URLs changed to environment variables with loopback fallback. No encoding, wire protocol, or queue algorithm changes."
+}

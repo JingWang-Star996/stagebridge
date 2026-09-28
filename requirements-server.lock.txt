@@ -1,0 +1,15 @@
+# Exact private .deps versions used in the verified Windows Python 3.13 deployment.
+# Torch, ComfyUI, safetensors, requests, YAML and psutil stay in the host runtime.
+annotated-doc==0.0.5
+annotated-types==0.8.0
+anyio==4.15.1
+click==8.5.0
+fastapi==0.141.1
+h11==0.16.0
+idna==3.20
+pydantic==2.13.5
+pydantic-core==2.46.5
+starlette==1.7.0
+typing-extensions==4.16.0
+typing-inspection==0.4.4
+uvicorn==0.54.0

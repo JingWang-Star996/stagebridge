@@ -1,0 +1,22 @@
+{
+  "shape": [
+    1,
+    769,
+    4096
+  ],
+  "dtype": "torch.float32",
+  "elements": 3149824,
+  "extra_equal": true,
+  "max_abs_diff": 0.09014892578125,
+  "mean_abs_diff": 0.0001863799927888766,
+  "median_abs_diff": 5.53131103515625e-05,
+  "p99_abs_diff": 0.0021818602085113548,
+  "rms_diff": 0.0005275877016116515,
+  "signal_rms_3080ti": 12.411113679246379,
+  "relative_rms_diff": 4.2509295720485855e-05,
+  "cosine_similarity": 0.9999999990963157,
+  "count_ge_0_02": 38,
+  "fraction_ge_0_02": 1.2064166124837451e-05,
+  "max_abs_value_3080ti": 593.9365234375,
+  "max_abs_value_5090": 593.93701171875
+}

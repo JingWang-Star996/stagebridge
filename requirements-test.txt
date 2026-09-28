@@ -1,0 +1,3 @@
+-r requirements-server.txt
+httpx>=0.28,<1
+# Tests also require torch, numpy and safetensors from the host runtime.
